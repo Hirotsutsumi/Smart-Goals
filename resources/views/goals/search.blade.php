@@ -12,11 +12,11 @@
                     {!! Form::open(['route' => 'goals.search', 'method' => 'get']) !!}
                         <div class="form-group row">
                              <span class="col-xs-2">{!! Form::label('keyword', 'Keyword:') !!}</span>
-                             <span class="col-xs-10">{!! Form::text('keyword', old('keyword'), ['class' => 'form-control','placeholder' => 'キーワードを入力']) !!}</span>
+                             <span class="col-xs-10">{!! Form::text('keyword', old('keyword'), ['class' => 'form-control','placeholder' => 'Input Keywords']) !!}</span>
                         </div>
                         <div class="form-group row">
                             <span class="col-xs-2">{!! Form::label('rate', 'Acheivement Rate (%):') !!}</span>
-                            <span class="col-xs-8">{!! Form::text('rate', old('rate'), ['class' => 'form-control','placeholder' => '半角数字を入力']) !!}</span>
+                            <span class="col-xs-8">{!! Form::text('rate', old('rate'), ['class' => 'form-control','placeholder' => 'Input numbers']) !!}</span>
                             <span class="col-xs-2">{!! Form::select('relate', [
                                 '0' => 'equal',
                                 '1' => 'above',
@@ -26,7 +26,7 @@
                         <div class="form-group row">
                              <span class="col-xs-2">{!! Form::label('category', 'Category:') !!}</span>
                             <span class="col-xs-10">{!! Form::select('category', [
-                                '' => 'カテゴリを選択',
+                                '' => 'Choose category',
                                 '0' => 'Study',
                                 '1' => 'Private',
                                 '2' => 'Communication',

@@ -2,7 +2,7 @@
     <table class="table">
 	    <thead>
 	        <tr>
-	        	<th>Smart Goals</th>
+	        	<th>Smart Goal</th>
 	        	<th>Keep</th>
 	        	<th></th>
             </tr>
