@@ -52,13 +52,13 @@
 			                backgroundColor: color(colorSet.red).alpha(0.5).rgbString(),
 		           	        borderColor: colorSet.red,
 			                pointBackgroundColor: colorSet.red,
-			                data: [avg_health_last, avg_work_last, avg_study_last, avg_private_last, avg_communication_last]
+			                data: [avg_communication_last, avg_work_last, avg_study_last, avg_private_last, avg_health_last]
 	            	},{
 		                	label: "this week",
 			                backgroundColor: color(colorSet.blue).alpha(0.5).rgbString(),
 			                borderColor: colorSet.blue,
 			                pointBackgroundColor: colorSet.blue,
-			                data: [avg_health_this, avg_work_this, avg_study_this, avg_private_this, avg_communication_this]
+			                data: [avg_communication_this, avg_work_this, avg_study_this, avg_private_this, avg_health_this]
 
 	              	},]
 	                },
