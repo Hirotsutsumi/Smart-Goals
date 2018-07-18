@@ -2,10 +2,10 @@
         <table class="table table-hover">
 		    <thead>
 		        <tr>
-			        <th>ユーザー</th>
-		        	<th>目標</th>
-			        <th>達成率</th>
-			        <th>日付</th>
+			        <th>User</th>
+		        	<th>Smart Goal</th>
+			        <th>Acheivement Rate</th>
+			        <th>Date</th>
 			        <th>Keep</th>
 			        <th>Delete</th>
 	            </tr>
