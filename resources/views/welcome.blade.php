@@ -6,10 +6,11 @@
         
          
   <section class="main-top">
-    <p class="site-title-sub">Welcome to SmartGoals</p>
-    <h1 class="site-title">     YOUR GOAL IS...</h1>
+   　<p class="site-title-sub">SmartGoal管理アプリ</p>
+    <h1 class="site-title">     Welcome to SmartGoals</h1>
+     
     <div class="buttons">
-      <a class="button button-showy" href="{{ route('signup.get') }}">Start SmartGoals</a>
+      <a class="button button-showy" href="{{ route('signup.get') }}">SIGN UP</a>
     </div>
   </section>
   
@@ -28,15 +29,15 @@
 
   <section class="skills">
     <h2 class="heading">HOW TO USE</h2>
-    <h3>まずはスマートゴールを追加しましょう！</h3>
+    <h3><strong>スマートゴールを追加したら．．．</strong></h3>
     <div class="skills-wrapper">
       <div class="skill-box">
         
-        <div class="skill-title">GRAPH</div>
+        <div class="skill-title">STEP1. REVIEW</div>
         <p class="skill-text">
-          Ⅰ.グラフでわかる達成度<br>
-          毎日のSmartGoalの達成度をグラフで確認して<br>
-          モチベーションアップ!!
+          前日のSmartGoalを振り返り<br>
+          達成率などを入力<br>
+          出力されたテンプレートで日報を作成しましょう！
         </p>
     
       </div>
@@ -47,12 +48,12 @@
        </div>   
       
       <div class="skill-box">
-        <div class="skill-title">SEARCH</div>
+        <div class="skill-title">STEP2. CHECK</div>
         <p class="skill-text">
-         Ⅱ.自己成長につなげる<br> 
-         目標にしたい同期のSmartGoalや<br>
-          同期が頑張っていることを参考にできる<br>
-          
+        過去の達成度と<br>
+        同期のSmartGoalを参考に<br> 
+         今日のSmartGoalを<br>
+         考えよう！
         </p>
       </div>
    <div class="skill-box">
@@ -60,11 +61,11 @@
          </span>
    </div>  
        
-        <div class="skill-title">EFFICIENCY</div>
+        <div class="skill-title">SREP3. ADD</div>
         <p class="skill-text">
-         Ⅲ. 日報作成の効率化<br>
-         他の日と比較しながら今日のSmartGoalを決めて<br>
-          スムーズに日報作成
+         SmartGoalを追加して<br>
+          スムーズに日報作成<br>
+          出力されたテンプレートで日報完成！
          
         </p>
       </div>
