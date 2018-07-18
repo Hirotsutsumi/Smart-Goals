@@ -226,7 +226,7 @@ class GoalsController extends Controller
         }
         
         //ページネーション
-        $goals = $query->orderBy('created_at','desc')->paginate(10);
+        $goals = $query->orderBy('created_at','desc')->paginate(30);
         return view('goals.search')->with('goals',$goals)
         ->with('keyword',$keyword)
         ->with('message','検索結果');

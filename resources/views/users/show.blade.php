@@ -5,9 +5,7 @@
         <aside class="col-xs-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">{{ $user->name }}</h3>
-                    <!--今は仮おき-->
-                    <a href="{{ route('goals.review') }}" class="jet">review</a> 
+                    <h2 class="panel-title">{{ $user->name }}</h3>
                 </div>
                 <div class="panel-body">
                    <!-- チャート描画キャンバス -->
