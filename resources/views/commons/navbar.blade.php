@@ -22,7 +22,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                Smart Goals (Review&Add)
+
+                                Goals (Review&Create)
+
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
@@ -36,7 +38,9 @@
                                 <li>
                                     <a href="{{ route('goals.create') }}" class="jet">
                                     <span aria-hidden="true"></span>
+
                                     Next Business Day's Goals
+
                                     </a>
                                 </li>
                             </ul>

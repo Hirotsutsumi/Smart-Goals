@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class='page_title'>
-        <h1>Smart Goals Setting</h1>
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-8 col-xs-offset-2">
+            <div class="col-xs-6">
+                <div class='page_title'>
+                    <h1>Smart Goals Setting</h1>
+                </div>
                 <div class="text-center">
                     {!! Form::open(['route' => 'goals.store']) !!}
                         <div class="form-group row">
@@ -84,6 +84,20 @@
                         </div>
                         {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
                     {!! Form::close() !!}
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="panel panel-warning" style="word-break:break-all;">
+                    <div class="panel-heading">
+                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">My Keeps</p>
+                    </div>
+                    @include('goals.keep-index', ['goals' => $keeps])
+                </div>
+                <div class="panel panel-success" style="word-break:break-all;">
+                    <div class="panel-heading">
+                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">Recommends</p>
+                    </div>
+                    @include('goals.create-index', ['goals' => $recommends])
                 </div>
             </div>
         </div>
