@@ -32,7 +32,7 @@
     <div class="skills-wrapper">
       <div class="skill-box">
         
-        <div class="skill-title">GRAPH</div>
+        <div class="skill-title">★Step1★</div>
         <p class="skill-text">
           Ⅰ.グラフでわかる達成度<br>
           毎日のSmartGoalの達成度をグラフで確認して<br>
