@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
+                        {!! Form::submit('Register', ['class' => 'btn btn-register btn-block']) !!}
                     {!! Form::close() !!}
                 </div>
             </div>

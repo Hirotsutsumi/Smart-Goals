@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
                 <div class="text-center">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-original">
                         <div class="panel-heading">
-                            <h2 class="panel-title">Previous Goals</h2>
+                            <h2 class="panel-title" style=>Previous Goals</h2>
                         </div>
                         <div class="panel-body">
                             {!! Form::open(['route' => 'goals.reviewed']) !!}
@@ -30,7 +30,7 @@
                                     </div>
                                     <input name="id[]" type="hidden" value= '{{$goal->id}}' >
                                 <?php endforeach; ?>
-                                {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
+                                {!! Form::submit('Register', ['class' => 'btn btn-register btn-block']) !!}
                             {!! Form::close() !!}
                         </div>
                     </div>
