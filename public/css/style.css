@@ -320,7 +320,7 @@ a.jet {
   margin:0;
   background-color:#eee9e6;
   color: #333;
-   font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
   font-weight: bold;
 }
 .skills-wrapper {
@@ -356,7 +356,7 @@ a.jet {
 /*初めての方は　と　２回目以降の方は*/
 .Judy{
    margin: 15 20px;
-  line-height: 35px;
+  line-height: 37px;
   font-size:30px;
   color: #999999;
  text-shadow:
