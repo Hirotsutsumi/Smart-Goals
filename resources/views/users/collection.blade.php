@@ -1,134 +1,170 @@
-<!--@extends('layouts.app')-->
+@extends('layouts.app')
 
-<!--@section('content')-->
-<!--<div class="kinoko-container">-->
+@section('content')
+<div class="kinoko-container">
 
-<!--  <div class="container-1"></div>-->
-<!--    <div class="box">A</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">B</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">C</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">D</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">E</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--  </div>-->
-<!--  <div class="container-2">-->
-<!--    <div class="box">F</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">G</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">H</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">I</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">J</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--  </div>-->
-<!--  <div class="container-3">-->
-<!--    <div class="box">K</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">L</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">M</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">N</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">O</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--  </div>-->
-<!--  <div class="container-4">-->
-<!--    <div class="box">P</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">Q</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">R</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-      <!--<img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">S</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--    <div class="box">T</div>-->
-<!--    @if(kinoko)-->
-<!--      <img src=""></img>-->
-<!--    @else-->
-<!--      <img src=""></img>-->
-<!--    @endif-->
-<!--  </div>-->
-<!--@endsection-->
+  <div class="container-1"></div>
+    <div class="image-box">
+      <img class="thumnail" src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    </div>
+    <div class="image-box">
+    @if($data1 >= 1)
+      <img class="thumnail" src="{{ asset ('images/defaultkinoko2.jpg')}}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data2[4] >= 1)
+      <img class="thumnail" src="{{ asset ('images/work.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data2[1] >= 1)
+      <img class="thumnail" src="{{ asset ('images/private.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data2[2] >= 1)
+      <img class="thumnail" src="{{ asset ('images/communication.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+  </div>
+  <div class="container-2">
+    <div class="image-box">
+    @if($data2[0] >= 1)
+      <img class="thumnail" src="{{ asset ('images/study.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data2[3] >= 1)
+      <img class="thumnail" src="{{ asset ('images/health.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data3>=15)
+      <img class="thumnail" src="{{ asset ('images/devil.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data3 >= 1)
+      <img class="thumnail" src="{{ asset ('images/dog.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($keepdata >= 1)
+      <img class="thumnail" src="{{ asset ('images/sue.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+  </div>
+  <div class="container-3">
+    <div class="image-box">
+    @if($data3 >= 3)
+      <img class="thumnail" src="{{ asset ('images/panda.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data3 >= 5)
+      <img class="thumnail" src="{{ asset ('images/tiger.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data3 >= 7)
+      <img class="thumnail" src="{{ asset ('images/kyouryuu.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data3 >= 10)
+      <img class="thumnail" src="{{ asset ('images/kirin.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data1 >= 6)
+      <img class="thumnail" src="{{ asset ('images/kuma.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+  </div>
+  <div class="container-4">
+    <div class="image-box">
+    @if($data1 >= 9)
+      <img class="thumnail" src="{{ asset ('images/pig.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data1 >= 12)
+      <img class="thumnail" src="{{ asset ('images/sai.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($data1 >= 15)
+      <img class="thumnail" src="{{ asset ('images/rabbit.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($keepdata >= 3)
+      <img class="thumnail" src="{{ asset ('images/zebra.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+    <div class="image-box">
+    @if($keepdata >= 5)
+      <img class="thumnail" src="{{ asset ('images/elephant.jpg') }}"></img>
+      <input class="disabled_checkbox" type="checkbox" checked />
+    @else
+      <img class="thumnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
+    @endif
+    </div>
+  </div>
+@endsection

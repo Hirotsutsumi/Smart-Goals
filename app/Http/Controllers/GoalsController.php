@@ -129,6 +129,10 @@ class GoalsController extends Controller
             $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
             $goals = $query->where('user_id', $user->id)->where('created_at', $latest)->get();
            
+        $id = \Auth::user()->id;
+        
+
+        
             return view('goals.review', [
                 'goals' => $goals,
             ]);

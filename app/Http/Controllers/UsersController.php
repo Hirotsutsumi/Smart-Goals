@@ -96,4 +96,24 @@ class UsersController extends Controller
 
         return view('users.followers', $data);
     }
+    
+    public function collection()
+    {
+        $user = \Auth::user();
+        $data = $user->goals_collection();
+        
+        $data1 = $data['data1'];
+        $data2 = $data['data2'];
+        $data3 = $data['data3'];
+        
+        $keepdata = $user->keeps_collection();
+    
+        return view('users.collection', [
+            'data1' => $data1,
+            'data2' => $data2,
+            'data3' => $data3,
+            'keepdata' => $keepdata
+            ]);
+        
+    }
 }
