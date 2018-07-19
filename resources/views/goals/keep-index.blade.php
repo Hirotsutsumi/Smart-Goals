@@ -2,7 +2,7 @@
         <table class="table table-hover">
 		    <thead>
 		        <tr>
-		        	<th>目標</th>
+		        	<th>Smart Goal</th>
 	                <th>Keep</th>
 	            </tr>
 	       </thead>
