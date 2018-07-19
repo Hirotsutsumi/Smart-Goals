@@ -22,7 +22,7 @@ footer {
  cover 
 .cover {
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
     height: 1000px;
     background: url("/images/logo2.jpg") center center no-repeat;
@@ -197,13 +197,19 @@ a.jet {
 /* --------------------------------
  * parts
  * -------------------------------- */
+
+
+.heading::before {
+  bottom: 5px;
+}
 .heading {
   position: relative;
   display: inline-block;
-  margin: 30px 0 15px;
+  margin: 0;
   padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
+  font-family: 'Constantia',sans-serif;
 }
 .heading::before,
 .heading::after {
@@ -220,7 +226,7 @@ a.jet {
 .button {
   display: inline-block;
   width: 200px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 4px;
   background-color: #afa58d;
   color: #fff;
@@ -233,6 +239,11 @@ a.jet {
 }
 .button-showy {
   background-color: #D29E04;
+  font-size: 20px;
+}
+.button-showyy {
+  background-color: #cbcb00;
+  font-size: 15px;
 }
 /*レビューテンプレートのページのボタン*/
 .button-showw{
@@ -257,7 +268,7 @@ a.jet {
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
 }
 .site-title-sub::before,
 .site-title-sub::after {
@@ -286,18 +297,18 @@ a.jet {
 /* --------------------------------
  * about
 * -------------------------------- */
-.about {
-  padding: 80px 30px;
-  background-color:#eae8e1;
-  color: #333;
-}
-.about-text {
-  margin: 30px 0;
-  line-height: 2.5;
-  font-size: 20px;
-  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
-  font-weight: bold;
-}
+/*.about {*/
+/*  padding: 80px 30px;*/
+/*  background-color:#eae8e1;*/
+/*  color: #333;*/
+/*}*/
+/*.about-text {*/
+/*  margin: 30px 0;*/
+/*  line-height: 2.5;*/
+/*  font-size: 20px;*/
+/*  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;*/
+/*  font-weight: bold;*/
+/*}*/
 
 
 
@@ -305,7 +316,8 @@ a.jet {
  * skills
  * -------------------------------- */
 .skills {
-  padding: 80px 0;
+  padding: 30px 0;
+  margin:0;
   background-color:#eee9e6;
   color: #333;
    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
@@ -332,7 +344,8 @@ a.jet {
 }
 .skill-title {
   margin: 0 20px 20px;
-  font-size: 2rem;
+  font-size: 30px;
+  font-weight: bold;
 }
 .skill-text {
   margin: 0 20px;
@@ -340,22 +353,30 @@ a.jet {
   font-size:21px;
 }
 
-h3{
-   margin: 0 20px;
-  line-height: 2;
-  font-size:21px;
-  color: red;
+/*初めての方は　と　２回目以降の方は*/
+.Judy{
+   margin: 15 20px;
+  line-height: 35px;
+  font-size:30px;
+  color: #999999;
+ text-shadow:
+  -1px -1px 0px #eee,
+   1px -1px 0px #5c5c5c,
+   1px  1px 0px #5c5c5c,
+  -1px  1px 0px #5c5c5c;
 }
+
 
 
 /* --------------------------------
  * contact
  * -------------------------------- */
 .contact {
-  padding: 80px 0 150px;
+  padding: 80px 0 151px;
+  text-align: center;
 }
 .contact-text{
-   color: #fff ;
+   color: #cccccc ;
    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
   font-weight: bold;
   font-size:20px;
@@ -463,8 +484,9 @@ box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
   background-color: black;
 }
 
+/* トップページの使い方の矢印i*/
 .skill-box .arrow{
   font-size: 100px;
 }
-  
+
 }
