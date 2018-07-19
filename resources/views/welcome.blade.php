@@ -7,7 +7,7 @@
          
   <section class="main-top">
    　<p class="site-title-sub">SmartGoal管理アプリ</p>
-    <h1 class="site-title">     Welcome to SmartGoals</h1>
+    <h1 class="site-title"> Welcome to SmartGoals</h1>
      
     <div class="buttons">
       <a class="button button-showy" href="#howtouse">HOW TO USE</a>
@@ -19,22 +19,20 @@
     <h2 class="heading">HOW TO USE</h2>
     
         <h3 class="Judy"><strong>初めての方はこちら</strong></h3>
-  
-    <div class="skills-wrapper">
-        <div class="skill-box">
-          <img src="{{ secure_asset("images/Temp.png") }}" alt="howtouse">
-        </div>
-        <div class="skill-box">  
-         <div class="skill-title">STEP0. REGISTER</div>
-          <p class="skill-text">
-             まず今日のSmartGoalを登録しましょう。<br>
-             目標達成してきのこを集めよう！<br>
-             
-          </p>
-          <hr>
-         </div>
-       </div>
-    </section>
+            <div class="skills-wrapper">
+                <div class="skill-box">
+                <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
+                </div>
+            <div class="skill-box">  
+                 <div class="skill-title">STEP0. REGISTER</div>
+                  <p class="skill-text">
+                     まず今日のSmartGoalを登録しましょう。<br>
+                     目標達成してきのこを集めよう！<br>
+                  </p>
+              <hr>
+            </div>
+           </div>
+  </section>
     
 　<section class="skills">　　　
         <h3 class="Judy"><strong>2回目以降の方はこちら</strong></h3>
@@ -49,7 +47,7 @@
         </p>
       </div>
         <div class="skill-box">
-          <img src="{{ secure_asset("images/Temp.png") }}" alt="howtouse">
+          <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
         </div>
      </div>
   </section>
@@ -57,13 +55,12 @@
   <section class="skills">
        <div class="skills-wrapper">
         <div class="skill-box">
-          <img src="{{ secure_asset("images/Temp.png") }}" alt="howtouse">
+          <img src="{{ secure_asset("images/Step2.png") }}" alt="howtouse">
         </div>
         <div class="skill-box">  
          <div class="skill-title">STEP2. CHECK</div>
           <p class="skill-text">
-             過去の達成度と
-             同期のSmartGoalを参考に<br>
+             過去の達成度と同期のSmartGoalを参考に<br>
              明日のSmartGoalを考えよう！
           </p>
          </div>
@@ -75,12 +72,12 @@
      <div class="skill-box">  
         <div class="skill-title">STEP3. ADD</div>
         <p class="skill-text">
-          SmartGoalを追加してスムーズに日報作成<br>
-          出力されたテンプレートで日報完成！
+          SmartGoalを追加するとテンプレートが出力されます<br>
+          出力されたテンプレートをコピーして日報完成！
         </p>
       </div>
         <div class="skill-box">
-          <img src="{{ secure_asset("images/Temp.png") }}" alt="howtouse">
+          <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
         </div>
       </div>
       <div class="buttons">
