@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="kinoko-container">
-
+  <h1>KINOKO COLLECTION</h1>
   <div class="container-1"></div>
     <div class="image-box">
       <img class="thumnail" src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
