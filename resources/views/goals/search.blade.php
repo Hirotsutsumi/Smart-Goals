@@ -42,10 +42,10 @@
                                 '2' => 'before'], null, ['class' => 'form-control'])!!}
                                 </span>
                         </div>
-                        {!! Form::submit('Search!', ['class' => 'btn btn-success btn-lg']) !!}
+                        {!! Form::submit('Search!', ['class' => 'btn btn-register btn-lg']) !!}
                         {!! Form::close() !!}
                         <br>
-                        <div class="panel panel-primary" style="word-break:break-all;">
+                        <div class="panel panel-original" style="word-break:break-all;">
                             <div class="panel-heading">
                                 <h3 class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">Results</h3>
                             </div>

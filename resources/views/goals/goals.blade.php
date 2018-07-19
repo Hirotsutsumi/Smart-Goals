@@ -32,20 +32,24 @@
                 @endif
             </div>
             <div>
-                <div class="panel panel-warning" style="word-break:break-all;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Study</h3>
+                @if(count($study) >0)
+                    <div class="panel panel-warning" style="word-break:break-all;">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Study</h3>
+                        </div>
+                        @include('goals.index', ['goals' => $study])
                     </div>
-                    @include('goals.index', ['goals' => $study])
-                </div>
+                @endif
             </div>
             <div>
-                <div class="panel panel-danger" style="word-break:break-all;">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Work</h3>
+                @if(count($work) >0)
+                    <div class="panel panel-danger" style="word-break:break-all;">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Work</h3>
+                        </div>
+                        @include('goals.index', ['goals' => $work])
                     </div>
-                    @include('goals.index', ['goals' => $work])
-                </div>
+                @endif
             </div>
         </div>
     </li>
