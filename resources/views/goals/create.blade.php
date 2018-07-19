@@ -87,18 +87,22 @@
                 </div>
             </div>
             <div class="col-xs-6">
+                @if(count($keeps) >0)
                 <div class="panel panel-warning" style="word-break:break-all;">
                     <div class="panel-heading">
-                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">My Keeps</p>
+                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">Your Keeps</p>
                     </div>
                     @include('goals.keep-index', ['goals' => $keeps])
                 </div>
+                @endif
+                @if(count($recommends) >0)
                 <div class="panel panel-success" style="word-break:break-all;">
                     <div class="panel-heading">
-                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">Recommends</p>
+                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">How about these goals?</p>
                     </div>
                     @include('goals.create-index', ['goals' => $recommends])
                 </div>
+                @endif
             </div>
         </div>
     </div>

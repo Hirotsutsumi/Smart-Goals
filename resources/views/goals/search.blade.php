@@ -7,7 +7,7 @@
 
     <div class="search">
         <div class="row">
-            <div class="col-xs-8 col-xs-offset-2">
+            <div class="col-xs-10 col-xs-offset-1">
                 <div class="text-center">
                     {!! Form::open(['route' => 'goals.search', 'method' => 'get']) !!}
                         <div class="form-group row">

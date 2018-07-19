@@ -179,7 +179,41 @@ class User extends Authenticatable
             }
                 
         return $sub;
-    }       
+    }
+    
+    
+    public function goals_collection(){
+        
+         $id = \Auth::user()->id;
+         
+         $data1 = \DB::table('goals')->where('user_id',$id)->count();
+         
+        $data2 = array();
+        
+         for($i=0; $i<5; $i++){
+         $data_temp = \DB::table('goals')->where('user_id',$id)->where('category', $i)->count();
+         $data2[] += $data_temp;
+         }
+         
+         $data3 = \DB::table('goals')->where('user_id',$id)->where('rate','=',100)->count();
+         
+         $data = [
+         'data1' => $data1,
+         'data2' => $data2,
+         'data3' => $data3,
+             ];
+        return $data;
+    }
+    
+    public function keeps_collection(){
+        
+         $id = \Auth::user()->id;
+         
+         $keepdata = \DB::table('good_user')->where('user_id',$id)->count();
+         
+         return $keepdata;
+         
+    }
     
             
     

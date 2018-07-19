@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-original navbar-static-top">
+    <nav class="navbar navbar-original navbar-static-top navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -69,7 +69,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</li>
-
+                                <li>{!! link_to_route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
                             </ul>
