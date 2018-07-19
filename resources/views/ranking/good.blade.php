@@ -4,10 +4,20 @@
     <div class='page_title'>
         <h1>Smart Goals List</h1>
     </div>
-    <div class="panel panel-primary" style="word-break:break-all;">
-        <div class="panel-heading">
-            <h3 class="panel-title">Keeps</h3>
+    <div class="col-sm-6">
+        <div class="panel panel-primary" style="word-break:break-all;">
+            <div class="panel-heading">
+                <h3 class="panel-title">Keeps (Your Smart Goals)</h3>
+            </div>
+            @include('ranking.index', ['goals' => $mygoals])
         </div>
-        @include('ranking.index', ['goals' => $goals])
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-primary" style="word-break:break-all;">
+            <div class="panel-heading">
+                <h3 class="panel-title">Keeps (Douki's Smart Goals)</h3>
+            </div>
+            @include('ranking.index', ['goals' => $othersgoals])
+        </div>
     </div>
 @endsection

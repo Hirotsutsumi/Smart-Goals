@@ -2,7 +2,7 @@
     <table class="table">
 	    <thead>
 	        <tr>
-	        	<th>Smart Goals</th>
+	        	<th>Smart Goal</th>
 	        	<th>Keep</th>
 	        	<th></th>
             </tr>
@@ -10,7 +10,7 @@
        <tbody>
            <?php foreach($goals as $goal): ?>
             <tr>
-                <td id=targetID>{{ $goal->content }}</td>
+                <td id='targetID'>{{ $goal->content }}</td>
                 <td>@include('good_user.good_button')</td>
                 <td><button id='btnCopy' class="btn"><span class='glyphicon glyphicon-copy'> copy</span></button></td>
             </tr>
@@ -35,6 +35,5 @@
           alert('コピーが失敗しました!');
       }
       selection.removeAllRanges();
-    
     });
 </script>
