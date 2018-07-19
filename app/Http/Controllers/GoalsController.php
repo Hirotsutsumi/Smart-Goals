@@ -35,7 +35,7 @@ class GoalsController extends Controller
         $keeps = \DB::table('good_user')->join('goals', 'good_user.goal_id', '=', 'goals.id')->select('goals.*')->where('good_user.user_id', $user->id)->groupBy('goals.id', 'goals.created_at', 'goals.updated_at','goals.user_id','goals.content','goals.rate','goals.category')->get();
         
         $query = Goal::query();
-        $recommends = $query->select('content')->distinct()->inRandomOrder()->take(10)->get();
+        $recommends = $query->select('content')->groupBy('content')->inRandomOrder()->take(10)->get();
         
         return view('goals.create', [
             'goal' => $goal,
