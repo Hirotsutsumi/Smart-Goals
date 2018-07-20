@@ -25,18 +25,18 @@
                 </div>
             </section>
             <section>　　　
-                <div class="skill-box">  
-                    <div class="skill-title">STEP1. REVIEW</div>
-                        <p class="skill-text">
-                        Smart Goalを振り返り<br>
-                        達成率などを入力<br>
-                        出力されたテンプレートで<br>
-                        日報を作成しましょう！
-                        </p>
-                </div>
-                <div class="skill-box">
-                    <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
-                </div>
+            <div class="skill-box">  
+                <div class="skill-title">STEP1. REVIEW</div>
+                    <p class="skill-text">
+                    Smart Goalを振り返り<br>
+                    達成率などを入力<br>
+                    出力されたテンプレートで<br>
+                    日報を作成しましょう！
+                    </p>
+            </div>
+            <div class="skill-box">
+                <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
+            </div>
             </section>
             <section>
             <div class="skill-box">
