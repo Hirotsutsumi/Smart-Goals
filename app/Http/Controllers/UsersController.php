@@ -116,4 +116,9 @@ class UsersController extends Controller
             ]);
         
     }
+    public function howto()
+    {
+        $user = \Auth::user();
+        return view('users.howto');
+    }
 }

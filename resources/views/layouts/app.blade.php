@@ -24,7 +24,7 @@
 
         @yield('cover')
 
-        <div class="container">
+        <div class="container" style="padding-top: 70px;">
             @include('commons.error_messages')
             @yield('content')
         </div>

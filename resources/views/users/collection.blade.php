@@ -165,6 +165,8 @@
     @else
       <img class="thumbnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
     @endif
-    </div>
-    
+    </div>  
+  </div>
+</div>
+
 @endsection
