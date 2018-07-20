@@ -17,7 +17,6 @@
         <div class="skills-wrapper">
             <section  id="howtouse">
                 <h2 class="heading">HOW TO USE</h2>
-                <h3 class="Judy"><strong>初めての方はこちら</strong></h3>
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
                 </div>
@@ -30,7 +29,6 @@
                 </div>
             </section>
             <section>　　　
-            <h3 class="Judy"><strong>2回目以降の方はこちら</strong></h3>
                 <div class="skill-box">  
                     <div class="skill-title">STEP1. REVIEW</div>
                         <p class="skill-text">
