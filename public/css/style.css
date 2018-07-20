@@ -251,6 +251,12 @@ a.jet {
   background-color: #cbcb00;
   font-size: 15px;
 }
+
+.button-sho {
+  background-color:#D29E04;
+  font-size: 15px;
+  
+}
 /*レビューテンプレートのページのボタン*/
 .button-showw{
  background-color: #f3bf88; 
@@ -360,18 +366,6 @@ a.jet {
   font-size:21px;
 }
 
-/*初めての方は　と　２回目以降の方は*/
-.Judy{
-   margin: 15 20px;
-  line-height: 37px;
-  font-size:30px;
-  color: #999999;
- text-shadow:
-  -1px -1px 0px #eee,
-   1px -1px 0px #5c5c5c,
-   1px  1px 0px #5c5c5c,
-  -1px  1px 0px #5c5c5c;
-}
 
 
 

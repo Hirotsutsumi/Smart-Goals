@@ -17,8 +17,7 @@
         <div class="skills-wrapper">
             <section  id="howtouse">
                 <h2 class="heading">HOW TO USE</h2>
-        
-                <h3 class="Judy"><strong>初めての方はこちら</strong></h3>
+
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
                 </div>
@@ -28,11 +27,10 @@
                      まず今日のSmartGoalを登録しましょう。<br>
                      目標達成してきのこを集めよう！<br>
                     </p>
-                    <br>
-                </div>
+                  </div>
             </section>
+            
             <section>　　　
-                <h3 class="Judy"><strong>2回目以降の方はこちら</strong></h3>
                 <div class="skill-box">  
                     <div class="skill-title">STEP1. REVIEW</div>
                     <p class="skill-text">
@@ -46,16 +44,14 @@
                 </div>
             </section>
             <section>
+                    <p class="skill-text">
+                    過去の達成度と同期のSmartGoalを参考に<br>
+                    次のSmart Goalを考えよう！
+                    </p>
+            </div>
                 <div class="skill-box">
                   <img src="{{ secure_asset("images/Step2.png") }}" alt="howtouse">
                 </div>
-                <div class="skill-box">  
-                     <div class="skill-title">STEP2. CHECK</div>
-                     <p class="skill-text">
-                        過去の達成度と同期のSmartGoalを参考に<br>
-                        明日のSmartGoalを考えよう！
-                     </p>
-                 </div>
             </section>
             <section>
                 <div class="skill-box">  
