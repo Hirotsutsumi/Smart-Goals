@@ -366,21 +366,22 @@ h3{
 /* --------------------------------
  * KINOKO COLLECTION
  * -------------------------------- */
-   .image-box{
-   float: left;
+  .container .image-box{
+  display: inline-block;
+   
    padding: 10px, 10px, 10px, 10px;
+   position: relative;
  }
  
  
  
  
- .thumnail{
-   width: 150px;
-   heught: 150px;
+ .image-box img.thumbnail{
+   width: 200px;
+   height: 160px;
  }
  
  .kinoko-container h1{
-position: relative;
 padding: 0.2em 0.5em;
 background: -moz-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
 background: -webkit-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
@@ -390,6 +391,40 @@ font-weight: lighter;
 box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
 }
 
+.image-box .disabled_checkbox {
+  /* チェックボックスの位置は絶対位置にします。 */
+  position: absolute;
+  /* チェックボックスは、親要素の右上から12pxの位置に配置します。 */
+  top: 12px;
+  right: 12px;
+  /* チェック前は非表示にしておきます。 */
+  display: none;
+  /* チェックボックスを大きくします。 */
+  transform: scale(2);
+  /* チェックボックスにカーソルを合わせたときに、
+  カーソルが指のマークになるようにします。 */
+  cursor: pointer;
+}
+
+.image-box img.thumbnail.checked {
+  /* チェックが入った状態だと、枠が表示されるようにします。 */
+  border: 6px solid blue;
+  /* 線をwidthとheightに含めるようにします。 */
+  box-sizing: border-box;
+}
+
+.image-box img.thumbnail.checked {
+  /* チェックが入った状態だと、枠が表示されるようにします。 */
+  border: 6px solid blue;
+  /* 線をwidthとheightに含めるようにします。 */
+  box-sizing: border-box;
+}
+
+.image-box img.thumbnail.checked + .disabled_checkbox {
+  /* 画像にcheckedクラスが指定されたときは、
+  チェックボックスの非表示を解除します。 */
+  display: block;
+}
 
 /* --------------------------------
  * smart phone
