@@ -15,7 +15,7 @@
                         <div class="panel-body">
                             {!! Form::open(['route' => 'goals.reviewed']) !!}
                                 <?php foreach($goals as $goal): ?>
-                                    <p class="text-left" style="font-size:large">Goal: {{ $goal->content }}</p>
+                                    <u><p class="text-left" style="font-size:large">Goal: {{ $goal->content }}</p></u>
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('rate[]', 'Acheivement Rate (%):') !!}</span>
                                         <span class="col-xs-10">{!! Form::text('rate[]', old('rate[]'), ['class' => 'form-control','placeholder' => 'Input numbers']) !!}</span>
