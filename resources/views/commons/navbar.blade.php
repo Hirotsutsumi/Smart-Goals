@@ -31,7 +31,7 @@
                                 <li>
                                     <a href="{{ route('goals.review') }}" class="jet">
                                     <span aria-hidden="true"></span>
-                                    Reflection of Today's Goals
+                                    Review
                                     </a>
                                 </li>
                                 <li role="separator" class="divider"></li>
@@ -39,7 +39,7 @@
                                     <a href="{{ route('goals.create') }}" class="jet">
                                     <span aria-hidden="true"></span>
 
-                                    Next Business Day's Goals
+                                    Create
 
                                     </a>
                                 </li>

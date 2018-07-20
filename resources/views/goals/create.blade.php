@@ -3,9 +3,9 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-sm-6">
                 <div class='page_title'>
-                    <h1>Smart Goals Setting</h1>
+                    <h1>Next Business Day's Goals</h1>
                 </div>
                 <div class="text-center">
                     {!! Form::open(['route' => 'goals.store']) !!}
@@ -14,8 +14,8 @@
                             <span class="col-xs-10">{!! Form::text('content', old('content'), ['class' => 'form-control','placeholder' => ' Input Smart Goal in English']) !!}</span>
                         </div>
                         <div class="form-group row">
-                             <span class="col-xs-2">{!! Form::label('category', 'Category:') !!}</span>
-                            <span class="col-xs-10">{!! Form::select('category', [
+                             <span class="col-sm-2">{!! Form::label('category', 'Category:') !!}</span>
+                            <span class="col-sm-10">{!! Form::select('category', [
                                 '' => 'Choose category',
                                 '0' => 'Study',
                                 '1' => 'Private',
@@ -38,8 +38,8 @@
                                     <span class="col-xs-10">{!! Form::text('content2', old('content2'), ['class' => 'form-control','placeholder' => 'Input Smart Goal in English']) !!}</span>
                                 </div>
                                 <div class="form-group row">
-                                    <span class="col-xs-2">{!! Form::label('category2', 'Category:') !!}</span>
-                                    <span class="col-xs-10">{!! Form::select('category2', [
+                                    <span class="col-sm-2">{!! Form::label('category2', 'Category:') !!}</span>
+                                    <span class="col-sm-10">{!! Form::select('category2', [
                                         '' => 'Choose category',
                                         '0' => 'Study',
                                         '1' => 'Private',
@@ -65,8 +65,8 @@
                                         <span class="col-xs-10">{!! Form::text('content3', old('content3'), ['class' => 'form-control','placeholder' => 'Input Smart Goal in English']) !!}</span>
                                     </div>
                                     <div class="form-group row">
-                                        <span class="col-xs-2">{!! Form::label('category3', 'Category:') !!}</span>
-                                        <span class="col-xs-10">{!! Form::select('category3', [
+                                        <span class="col-sm-2">{!! Form::label('category3', 'Category:') !!}</span>
+                                        <span class="col-sm-10">{!! Form::select('category3', [
                                             '' => 'Choose category',
                                             '0' => 'Study',
                                             '1' => 'Private',
@@ -86,18 +86,28 @@
                     {!! Form::close() !!}
                 </div>
             </div>
-            <div class="col-xs-6">
-                <div class="panel panel-warning" style="word-break:break-all;">
-                    <div class="panel-heading">
-                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">Your Keeps</p>
+            <div class="col-sm-6">
+                <div class="panel-group" id="accordion">
+                    @if(count($previous) >0)
+                        <div class="panel panel-info" style="word-break:break-all;">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse0" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">Previous goals</a>
+                            </div>
+                            @include('goals.previous-index', ['goals' => $previous])
+                        </div>
+                    @endif
+                    <div class="panel panel-warning" style="word-break:break-all;">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">Your Keeps</a>
+                        </div>
+                        @include('goals.keep-index', ['goals' => $keeps])
                     </div>
-                    @include('goals.keep-index', ['goals' => $keeps])
-                </div>
-                <div class="panel panel-success" style="word-break:break-all;">
-                    <div class="panel-heading">
-                        <p class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">How about these goals?</p>
+                    <div class="panel panel-success" style="word-break:break-all;">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">How about these goals?</a>
+                        </div>
+                        @include('goals.create-index', ['goals' => $recommends])
                     </div>
-                    @include('goals.create-index', ['goals' => $recommends])
                 </div>
             </div>
         </div>

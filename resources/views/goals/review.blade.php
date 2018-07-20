@@ -2,7 +2,7 @@
 
 @section('content')
     <div class='page_title'>
-        <h1>Review Smart Goals</h1>
+        <h1>Reflection of Today's Goals</h1>
     </div>
     <div class="container">
         <div class="row">
@@ -10,12 +10,12 @@
                 <div class="text-center">
                     <div class="panel panel-original">
                         <div class="panel-heading">
-                            <h2 class="panel-title" style=>Previous Goals</h2>
+                            <h2 class="panel-title" style=>Today's Goals</h2>
                         </div>
                         <div class="panel-body">
                             {!! Form::open(['route' => 'goals.reviewed']) !!}
                                 <?php foreach($goals as $goal): ?>
-                                    <p class="text-left" style="font-size:large">{{ $goal->content }}</p>
+                                    <p class="text-left" style="font-size:large">Goal: {{ $goal->content }}</p>
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('rate[]', 'Acheivement Rate (%):') !!}</span>
                                         <span class="col-xs-10">{!! Form::text('rate[]', old('rate[]'), ['class' => 'form-control','placeholder' => 'Input numbers']) !!}</span>
