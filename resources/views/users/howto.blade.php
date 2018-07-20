@@ -94,7 +94,7 @@
                     <img src="{{ secure_asset("images/kinoko.png") }}" alt="howtouse">
                 </div>
                 <div class="skill-box">  
-                    <div class="skill-title"></div>
+                    <div class="skill-title">KINOKO</div>
                         <p class="skill-text">
                         Smart Goalをたくさん設定して<br>
                         全20種類のきのこをコンプリートしよう!
