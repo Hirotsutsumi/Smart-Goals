@@ -24,7 +24,13 @@
                         目標達成してきのこを集めよう！<br>
                         </p>
                 </div>
+                    <p class="skill-text">
+                     まず今日のSmartGoalを登録しましょう。<br>
+                     目標達成してきのこを集めよう！<br>
+                    </p>
+                  </div>
             </section>
+            
             <section>　　　
             <h3 class="Judy"><strong>2回目以降の方はこちら</strong></h3>
                 <div class="skill-box">  
@@ -50,6 +56,7 @@
                     次のSmart Goalを考えよう！
                     </p>
             </div>
+
             </section>
             <section>
             <div class="skill-box">  
