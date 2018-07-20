@@ -17,6 +17,7 @@
         <div class="skills-wrapper">
             <section  id="howtouse">
                 <h2 class="heading">HOW TO USE</h2>
+
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
                 </div>
@@ -26,16 +27,17 @@
                      まず今日のSmartGoalを登録しましょう。<br>
                      目標達成してきのこを集めよう！<br>
                     </p>
-                </div>
+                  </div>
             </section>
+            
             <section>　　　
                 <div class="skill-box">  
                     <div class="skill-title">STEP1. REVIEW</div>
-                        <p class="skill-text">
-                        Smart Goalを振り返り
+                    <p class="skill-text">
+                        今日のSmartGoalを振り返り
                         達成率などを入力<br>
                         出力されたテンプレートで日報を作成しましょう！
-                        </p>
+                    </p>
                 </div>
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
@@ -47,23 +49,38 @@
                     次のSmart Goalを考えよう！
                     </p>
             </div>
+                <div class="skill-box">
+                  <img src="{{ secure_asset("images/Step2.png") }}" alt="howtouse">
+                </div>
             </section>
             <section>
-            <div class="skill-box">  
-                <div class="skill-title">STEP3. ADD</div>
+                <div class="skill-box">  
+                    <div class="skill-title">STEP3. ADD</div>
                     <p class="skill-text">
-                    Smart Goalを追加するとテンプレートが出力されます<br>
-                    出力されたテンプレートをコピーして日報完成！
+                      SmartGoalを追加するとテンプレートが出力されます<br>
+                      出力されたテンプレートをコピーして日報完成！
                     </p>
-            </div>
-            <div class="skill-box">
-                <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
-            </div>
-            <div class="buttons">
-                <a class="button button-showyy" href="{{ route('signup.get') }}">SIGN UP!</a>
-            </div>
-            </section>
+                </div>
+                <div class="skill-box">
+                    <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
+                </div>
+                <div class="buttons">
+                    <a class="button button-showyy" href="{{ route('signup.get') }}">SIGN UP!</a>
+                </div>
+             </section>
         </div>
     </div>
-</div>
+    <div class="main-top">
+        <section id="contact">
+            <h2 class="heading">ABOUT US</h2>
+            <p class="contact-text">
+                purple tribe<br>
+                チームきりんさん<br>
+       
+                RYO　ISSEI　HIRO　SUE　KANAKO　ONOSHIN
+            </p>
+  
+        </section>
+    </div>
+</div>  
 @endsection
