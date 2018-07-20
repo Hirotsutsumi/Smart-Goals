@@ -97,7 +97,7 @@
                     <div class="skill-title"></div>
                         <p class="skill-text">
                         Smart Goalをたくさん設定して<br>
-                        全19種類のキノコをコンプリートしよう!
+                        全20種類のきのこをコンプリートしよう!
                         </p>
                 </div>
             </section>
