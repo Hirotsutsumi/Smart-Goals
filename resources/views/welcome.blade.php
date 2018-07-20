@@ -4,7 +4,6 @@
 
 <div class='top'>
         
-         
   <section class="main-top">
    　<p class="site-title-sub">SmartGoal管理アプリ</p>
     <h1 class="site-title"> Welcome to SmartGoals</h1>
