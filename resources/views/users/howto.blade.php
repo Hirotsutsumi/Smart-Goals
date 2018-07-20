@@ -1,18 +1,7 @@
 @extends('layouts.app')
 
 @section('cover')
-
 <div class='top'>
-        
-  <section class="main-top">
-   　<p class="site-title-sub">SmartGoal管理アプリ</p>
-    <h1 class="site-title"> Welcome to SmartGoals</h1>
-     
-    <div class="buttons">
-      <a class="button button-showy" href="#howtouse">HOW TO USE</a>
-    </div>
-  </section>
-  
     <div class="skills">
         <div class="skills-wrapper">
             <section  id="howtouse">
@@ -23,10 +12,10 @@
                 </div>
                 <div class="skill-box">  
                     <div class="skill-title">STEP0. REGISTER</div>
-                    <p class="skill-text">
-                     まず今日のSmartGoalを登録しましょう。<br>
-                     目標達成してきのこを集めよう！<br>
-                    </p>
+                        <p class="skill-text">
+                        まずSmart Goalを登録しましょう。<br>
+                        目標達成してきのこを集めよう！<br>
+                        </p>
                 </div>
             </section>
             <section>　　　
@@ -44,6 +33,11 @@
                 </div>
             </section>
             <section>
+            <div class="skill-box">
+                <img src="{{ secure_asset("images/Step2.png") }}" alt="howtouse">
+            </div>
+            <div class="skill-box">  
+                <div class="skill-title">STEP2. CHECK</div>
                     <p class="skill-text">
                     過去の達成度と同期のSmartGoalを参考に<br>
                     次のSmart Goalを考えよう！
@@ -60,9 +54,6 @@
             </div>
             <div class="skill-box">
                 <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
-            </div>
-            <div class="buttons">
-                <a class="button button-showyy" href="{{ route('signup.get') }}">SIGN UP!</a>
             </div>
             </section>
         </div>

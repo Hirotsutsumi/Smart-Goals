@@ -60,6 +60,12 @@ footer {
     border:none
      
 }
+.btn-register{
+    background-image: none;
+    background-color: #fac559;
+    color: black;
+    border-color: black;
+}
 
 .navbar-original{
     background:black;
@@ -331,6 +337,7 @@ a.jet {
 }
 .skill-box {
   display: table-cell;
+  padding: 70px;
 }
 .skill-icon {
   width: 150px;
@@ -489,4 +496,18 @@ box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
   font-size: 100px;
 }
 
+}
+
+.panel-original{
+  color: black;
+  border:medium solid;
+  border-color: black;
+}
+.panel-original > .panel-heading {
+    background-image: none;
+    background-color: black;
+    color: #fac559;
+}
+.panel-title{
+  font-weight: bold;
 }
