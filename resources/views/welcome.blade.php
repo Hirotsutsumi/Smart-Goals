@@ -10,40 +10,33 @@
             </div>
     </section>
     <div class="skills">
+        <h2 class="heading">HOW TO USE</h2>
         <div class="skills-wrapper">
             <section  id="howtouse">
-                <h2 class="heading">HOW TO USE</h2>
-                <h3 class="Judy"><strong>初めての方はこちら</strong></h3>
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
                 </div>
                 <div class="skill-box">  
                     <div class="skill-title">STEP0. REGISTER</div>
                         <p class="skill-text">
-                        まずSmart Goalを登録しましょう。<br>
+                        まずSmart Goalを登録、<br>
                         目標達成してきのこを集めよう！<br>
                         </p>
                 </div>
-                    <p class="skill-text">
-                     まず今日のSmartGoalを登録しましょう。<br>
-                     目標達成してきのこを集めよう！<br>
-                    </p>
-                  </div>
             </section>
-            
             <section>　　　
-            <h3 class="Judy"><strong>2回目以降の方はこちら</strong></h3>
-                <div class="skill-box">  
-                    <div class="skill-title">STEP1. REVIEW</div>
-                        <p class="skill-text">
-                        Smart Goalを振り返り
-                        達成率などを入力<br>
-                        出力されたテンプレートで日報を作成しましょう！
-                        </p>
-                </div>
-                <div class="skill-box">
-                    <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
-                </div>
+            <div class="skill-box">  
+                <div class="skill-title">STEP1. REVIEW</div>
+                    <p class="skill-text">
+                    Smart Goalを振り返り<br>
+                    達成率などを入力<br>
+                    出力されたテンプレートで<br>
+                    日報を作成しましょう！
+                    </p>
+            </div>
+            <div class="skill-box">
+                <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
+            </div>
             </section>
             <section>
             <div class="skill-box">
@@ -52,28 +45,39 @@
             <div class="skill-box">  
                 <div class="skill-title">STEP2. CHECK</div>
                     <p class="skill-text">
-                    過去の達成度と同期のSmartGoalを参考に<br>
-                    次のSmart Goalを考えよう！
+                    左上のロゴをクリックしてMy Statusへ!<br>
+                    達成度や過去のSmart Goalをチェック!
                     </p>
             </div>
-
             </section>
             <section>
             <div class="skill-box">  
                 <div class="skill-title">STEP3. ADD</div>
                     <p class="skill-text">
-                    Smart Goalを追加するとテンプレートが出力されます<br>
-                    出力されたテンプレートをコピーして日報完成！
+                    Smart Goalを追加すると<br>
+                    テンプレートが出力されます<br>
+                    出力されたテンプレートをコピーして<br>
+                    日報完成！
                     </p>
             </div>
             <div class="skill-box">
                 <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
             </div>
+            </section>
             <div class="buttons">
                 <a class="button button-showyy" href="{{ route('signup.get') }}">SIGN UP!</a>
             </div>
-            </section>
         </div>
+    </div>
+    <div class="main-top">
+        <section id="contact">
+            <h2 class="heading">ABOUT US</h2>
+            <p class="contact-text">
+                purple tribe<br>
+                チームきりんさん<br>
+                RYO　ISSEI　HIRO　SUE　KANAKO　ONOSHIN
+            </p>
+        </section>
     </div>
 </div>
 @endsection

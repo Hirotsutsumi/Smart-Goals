@@ -254,10 +254,10 @@ a.jet {
 }
 
 .button-sho {
-  background-color:#D29E04;
+  background-color: #D29E04;
   font-size: 15px;
-  
 }
+
 /*レビューテンプレートのページのボタン*/
 .button-showw{
  background-color: #f3bf88; 
@@ -343,8 +343,8 @@ a.jet {
   table-layout: fixed;
 }
 .skill-box {
-  display: table-cell;
-  padding: 70px;
+  display: inline-block;
+  padding: 40px;
 }
 .skill-icon {
   width: 150px;

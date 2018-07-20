@@ -30,7 +30,8 @@
                         <p class="skill-text">
                         Smart Goalを振り返り<br>
                         達成率などを入力<br>
-                        出力されたテンプレートで日報を作成しましょう！
+                        出力されたテンプレートで<br>
+                        日報を作成しましょう！
                         </p>
                 </div>
                 <div class="skill-box">
@@ -53,8 +54,10 @@
             <div class="skill-box">  
                 <div class="skill-title">STEP3. ADD</div>
                     <p class="skill-text">
-                    Smart Goalを追加するとテンプレートが出力されます<br>
-                    出力されたテンプレートをコピーして日報完成！
+                    Smart Goalを追加すると<br>
+                    テンプレートが出力されます<br>
+                    出力されたテンプレートをコピーして<br>
+                    日報完成！
                     </p>
             </div>
             <div class="skill-box">
@@ -88,11 +91,13 @@
             </section>
             <section  id="kinoko">
                 <div class="skill-box">
-                    <img src="{{ secure_asset("images/") }}" alt="howtouse">
+                    <img src="{{ secure_asset("images/kinoko.png") }}" alt="howtouse">
                 </div>
                 <div class="skill-box">  
-                    <div class="skill-title"></div>
+                    <div class="skill-title">KINOKO</div>
                         <p class="skill-text">
+                        Smart Goalをたくさん設定して<br>
+                        全20種類のきのこをコンプリートしよう!
                         </p>
                 </div>
             </section>
