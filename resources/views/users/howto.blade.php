@@ -2,13 +2,6 @@
 
 @section('cover')
 <div class='top'>
-    <section class="main-top">
-        <p class="site-title-sub">SmartGoal管理アプリ</p>
-        <h1 class="site-title"> Welcome to SmartGoals</h1>
-            <div class="buttons">
-                <a class="button button-showy" href="#howtouse">HOW TO USE</a>
-            </div>
-    </section>
     <div class="skills">
         <div class="skills-wrapper">
             <section  id="howtouse">
@@ -61,9 +54,6 @@
             </div>
             <div class="skill-box">
                 <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
-            </div>
-            <div class="buttons">
-                <a class="button button-showyy" href="{{ route('signup.get') }}">SIGN UP!</a>
             </div>
             </section>
         </div>

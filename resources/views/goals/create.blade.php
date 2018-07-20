@@ -11,7 +11,7 @@
                     {!! Form::open(['route' => 'goals.store']) !!}
                         <div class="form-group row">
                             <span class="col-xs-2">{!! Form::label('content', 'Smart Goal:') !!}</span>
-                            <span class="col-xs-10">{!! Form::text('content', old('content'), ['class' => 'form-control','placeholder' => ' Input Smart Goal']) !!}</span>
+                            <span class="col-xs-10">{!! Form::text('content', old('content'), ['class' => 'form-control','placeholder' => ' Input Smart Goal in English']) !!}</span>
                         </div>
                         <div class="form-group row">
                              <span class="col-xs-2">{!! Form::label('category', 'Category:') !!}</span>
@@ -25,7 +25,7 @@
                         </div>
                         <div class="form-group row">
                             <span class="col-xs-2">{!! Form::label('why', 'Why:') !!}</span>
-                            <span class="col-xs-10">{!! Form::text('why', old('why'), ['class' => 'form-control','placeholder' => 'Input Reason']) !!}</span>
+                            <span class="col-xs-10">{!! Form::text('why', old('why'), ['class' => 'form-control','placeholder' => 'Input Reason in English']) !!}</span>
                         </div>
                         <div class="hidden_box">
                             <label for="label1" class="hidden_box_label">Second Smart Goal</label>
@@ -35,7 +35,7 @@
                             <!--非表示ここから-->     
                                 <div class="form-group row">
                                     <span class="col-xs-2">{!! Form::label('content2', 'Smart Goal:') !!}</span>
-                                    <span class="col-xs-10">{!! Form::text('content2', old('content2'), ['class' => 'form-control','placeholder' => 'Input Smart Goal']) !!}</span>
+                                    <span class="col-xs-10">{!! Form::text('content2', old('content2'), ['class' => 'form-control','placeholder' => 'Input Smart Goal in English']) !!}</span>
                                 </div>
                                 <div class="form-group row">
                                     <span class="col-xs-2">{!! Form::label('category2', 'Category:') !!}</span>
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <span class="col-xs-2">{!! Form::label('why2', 'Why:') !!}</span>
-                                    <span class="col-xs-10">{!! Form::text('why2', old('why2'), ['class' => 'form-control','placeholder' => 'Input Reason']) !!}</span>
+                                    <span class="col-xs-10">{!! Form::text('why2', old('why2'), ['class' => 'form-control','placeholder' => 'Input Reason in English']) !!}</span>
                                 </div>
                                 <!--ここまで-->
                             </div>
@@ -62,7 +62,7 @@
                                     <!--非表示ここから-->     
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('content3', 'Smart Goal:') !!}</span>
-                                        <span class="col-xs-10">{!! Form::text('content3', old('content3'), ['class' => 'form-control','placeholder' => 'Input Smart Goal']) !!}</span>
+                                        <span class="col-xs-10">{!! Form::text('content3', old('content3'), ['class' => 'form-control','placeholder' => 'Input Smart Goal in English']) !!}</span>
                                     </div>
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('category3', 'Category:') !!}</span>
@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('why3', 'Why:') !!}</span>
-                                        <span class="col-xs-10">{!! Form::text('why3', old('why3'), ['class' => 'form-control','placeholder' => 'Input Reason']) !!}</span>
+                                        <span class="col-xs-10">{!! Form::text('why3', old('why3'), ['class' => 'form-control','placeholder' => 'Input Reason in English']) !!}</span>
                                     </div>
                                     <!--ここまで-->
                                 </div>

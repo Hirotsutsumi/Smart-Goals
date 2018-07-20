@@ -22,11 +22,11 @@
                                     </div>
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('review[]', 'Review:') !!}</span>
-                                        <span class="col-xs-10">{!! Form::text('review[]', old('review[]'), ['class' => 'form-control','placeholder' => 'Input Review']) !!}</span>
+                                        <span class="col-xs-10">{!! Form::text('review[]', old('review[]'), ['class' => 'form-control','placeholder' => 'Input Review in English']) !!}</span>
                                     </div>
                                     <div class="form-group row">
                                         <span class="col-xs-2">{!! Form::label('step[]', 'Next Steps:') !!}</span>
-                                        <span class="col-xs-10">{!! Form::text('step[]', old('step[]'), ['class' => 'form-control','placeholder' => 'Input Next step']) !!}</span>
+                                        <span class="col-xs-10">{!! Form::text('step[]', old('step[]'), ['class' => 'form-control','placeholder' => 'Input Next step in English']) !!}</span>
                                     </div>
                                     <input name="id[]" type="hidden" value= '{{$goal->id}}' >
                                 <?php endforeach; ?>

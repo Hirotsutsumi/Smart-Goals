@@ -337,6 +337,7 @@ a.jet {
 }
 .skill-box {
   display: table-cell;
+  padding: 70px;
 }
 .skill-icon {
   width: 150px;
