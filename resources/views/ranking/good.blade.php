@@ -4,7 +4,6 @@
     <div class='page_title'>
         <h1>Smart Goals List</h1>
     </div>
-    @if(count($mygoals) >0)
     <div class="col-sm-6">
         <div class="panel panel-original" style="word-break:break-all;">
             <div class="panel-heading">
@@ -13,8 +12,6 @@
             @include('ranking.index', ['goals' => $mygoals])
         </div>
     </div>
-    @endif
-    @if(count($othersgoals) >0)
     <div class="col-sm-6">
         <div class="panel panel-original" style="word-break:break-all;">
             <div class="panel-heading">
@@ -23,5 +20,4 @@
             @include('ranking.index', ['goals' => $othersgoals])
         </div>
     </div>
-    @endif
 @endsection

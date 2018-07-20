@@ -37,8 +37,9 @@ class GoalsController extends Controller
         $query = Goal::query();
         $recommends = $query->select('content')->groupBy('content')->inRandomOrder()->take(10)->get();
         
+        $query2 = Goal::query();
         $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
-        $previous = $query->where('user_id', $user->id)->where('created_at', $latest)->get();
+        $previous = $query2->where('user_id', $user->id)->where('created_at', $latest)->get();
         
         return view('goals.create', [
             'goal' => $goal,
