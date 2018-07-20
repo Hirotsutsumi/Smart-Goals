@@ -195,7 +195,7 @@ class User extends Authenticatable
          $data2[] += $data_temp;
          }
          
-         $data3 = \DB::table('goals')->where('user_id',$id)->where('rate','=',100)->count();
+         $data3 = \DB::table('goals')->where('user_id',$id)->where('rate','>=',100)->count();
          
          $data = [
          'data1' => $data1,
