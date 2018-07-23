@@ -132,6 +132,7 @@ class UsersController extends Controller
         $user->save();
         
         return redirect()->back();
+    }
 
     public function howto()
     {
