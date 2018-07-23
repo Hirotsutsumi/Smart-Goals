@@ -125,6 +125,9 @@ class UsersController extends Controller
     
     public function profile(Request $request){
         
+        $this->validate($request, [
+            'image' => 'required',
+        ]);
         $user = \Auth::user();
         
         $user = User::find($user->id);
@@ -134,7 +137,6 @@ class UsersController extends Controller
         return redirect()->back();
     }
 
-    }
     public function howto()
     {
         $user = \Auth::user();
