@@ -3,12 +3,15 @@
 @section('content')
 <div class="kinoko-container">
   <h1>KINOKO COLLECTION</h1>
+  {!! Form::open(['route' => 'users.profile']) !!} 
   <div class="container"></div>
     <div class="image-box">
+
       <a href="{{ asset  ('images/defaultkinoko1.jpg') }}" data-lightbox="kinoko" data-title="きのこ<br>サインアップすると仲間になるよ">
         <img class="thumbnail" src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
         <input class="disabled_checkbox" type="checkbox"  checked />
       </a>
+
     </div>
     <div class="image-box">
     @if($data1 >= 1)
@@ -243,6 +246,13 @@
       <img class="thumbnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
     </a>
     @endif
+
+    </div>
+    
+    <div class="register button">
+     
+    {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
+    {!! Form::close() !!}
     </div>  
   </div>
 </div>
