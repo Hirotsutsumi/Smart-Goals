@@ -74,15 +74,17 @@
                             🔍Search for Smart Goalsで<br>
                             他のユーザーのSmart Goalを<br>
                             絞り込み検索！<br>
+                            ✔ボタンで他のユーザーの<br>
+                            Smart GoalをKeep!
                         </p>
                     </div>
             </section>
             <section  id="keep">
                  <div class="skill-box">  
-                    <div class="skill-title">KEEP</div>
+                    <div class="skill-title">KEEP List</div>
                         <p class="skill-text">
-                            ✔ボタンで他のユーザーの<br>Smart Goalをkeep!<br>
-                            Smart Goal作成の際に<br>参照できます
+                            KeepしたSmart Goalを<br>
+                            Keepsページでチェックできる!
                         </p>
                     </div>
                 <div class="skill-box">
