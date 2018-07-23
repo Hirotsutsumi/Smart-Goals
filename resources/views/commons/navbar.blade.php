@@ -61,8 +61,8 @@
                         
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="gravatar">
-                                    <img src="{{ Gravatar::src(Auth::user()->name, 20) . '&d=mm' }}" alt="" class="img-circle">
+                                <span class="prof">
+                                    <img src="{{ Gravatar::src(Auth::user()->image, 20) . '&d=mm' }}" alt="" class="img-circle">
                                 </span>
                                 {{ Auth::user()->name }}
                                 <span class="caret"></span>
