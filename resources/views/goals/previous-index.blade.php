@@ -1,4 +1,4 @@
-    <div id="collapse0" class="panel-body index-box panel-collapse collapse in">
+    <div id="collapse0" class="panel-body previous-index-box panel-collapse collapse in">
         <table class="table table-hover">
 		    <thead>
 		        <tr>

@@ -110,6 +110,13 @@ a.jet {
     -moz-box-shadow: 5px 5px 10px #000;
 }
 
+.previous-index-box{
+    height:170px;
+    box-shadow: 5px 5px 10px #000;
+    -webkit-box-shadow: 5px 5px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+
 .ranking-box{
     height:600px;
     overflow-y: scroll;
