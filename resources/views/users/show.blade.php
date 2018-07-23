@@ -6,9 +6,15 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h2 class="panel-title">{{ $user->name }}</h3>
-                </div>
-                <div class="panel-body">
-                   <!-- チャート描画キャンバス -->
+                    @if($user->image)
+                    
+                      <img src="{{asset ($user->image) }}"></img>
+                      
+                    @else
+                    
+                    <img src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
+                    
+                    @endif
                   <div><canvas id="myChart" height="500px" width="300px"></canvas></div>
                   <script>
 
