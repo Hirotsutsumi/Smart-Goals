@@ -261,13 +261,19 @@ a.jet {
 }
 
 .button-sho {
-  background-color: #D29E04;
+  background-image: none;
+  background-color: #fac559;
+  color: black;
+  border-color: black;
   font-size: 15px;
 }
 
 /*レビューテンプレートのページのボタン*/
 .button-showw{
- background-color: #f3bf88; 
+  background-image: none;
+  background-color: #fac559;
+  color: black;
+  border-color: black;
 }
 .button-showww{
  background-color:#a8c97f; 
@@ -314,21 +320,21 @@ a.jet {
 }
 
 
-/* --------------------------------
- * about
-* -------------------------------- */
-/*.about {*/
-/*  padding: 80px 30px;*/
-/*  background-color:#eae8e1;*/
-/*  color: #333;*/
-/*}*/
-/*.about-text {*/
-/*  margin: 30px 0;*/
-/*  line-height: 2.5;*/
-/*  font-size: 20px;*/
-/*  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;*/
-/*  font-weight: bold;*/
-/*}*/
+ /*--------------------------------*/
+ /* about*/
+ /*-------------------------------- */
+.about {
+  padding: 80px 30px;
+  background-color:#eae8e1;
+  color: #333;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+  font-size: 20px;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
+  font-weight: bold;
+}
 
 
 

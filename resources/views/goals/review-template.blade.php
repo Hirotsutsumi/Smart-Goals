@@ -30,12 +30,12 @@
                 </div>
                 <div class=text-center>
                     <div class="buttons">
-                          <a class="button button-showw" href="{{ route('goals.create') }}">
+                          <a class="btn button-showw button-block" href="{{ route('goals.create') }}">
                           <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                           Add Goals
                           </a>
                    
-                         <a class="button button-showww" href= "{{ route('goals.search')}}" >
+                         <a class="btn button-showw button-block" href= "{{ route('goals.search')}}" >
                          <span class = "glyphicon glyphicon-search" area-hidden="true"></span>
                          Search for Goals
                          </a>

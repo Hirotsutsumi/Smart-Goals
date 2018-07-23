@@ -6,13 +6,21 @@
         <p class="site-title-sub">SmartGoal管理アプリ</p>
         <h1 class="site-title"> Welcome to SmartGoals</h1>
             <div class="buttons">
+                <a class="button button-showy" href="#about">ABOUT</a>
                 <a class="button button-showy" href="#howtouse">HOW TO USE</a>
             </div>
     </section>
-    <div class="skills">
+    <section class="about" id="about">
+    <h2 class="heading">ABOUT SmartGoals</h2>
+    <p class="about-text">
+      SmartGoalsはSmartGoalの作成をサポートします。My StatusでSmartGoalの達成率や作成日を確認できます。<br>
+      また同期のSmarGoalを検索、保存しSmarGoal作成の際に参考にすることもできます。
+    </p>
+  </section>
+    <div class="skills" id="howtouse">
         <h2 class="heading">HOW TO USE</h2>
         <div class="skills-wrapper">
-            <section  id="howtouse">
+            <section>
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
                 </div>
