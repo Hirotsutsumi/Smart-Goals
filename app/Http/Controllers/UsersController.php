@@ -40,6 +40,10 @@ class UsersController extends Controller
         $avg_communication_last = $user->avg_last(2, $user->id);
         $avg_health_last = $user->avg_last(3, $user->id);
         $avg_work_last = $user->avg_last(4, $user->id);
+        //前回立てた目標
+        $query2 = Goal::query();
+        $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
+        $today = $query2->where('user_id', $user->id)->where('created_at', $latest)->get();
         
         
         
@@ -60,6 +64,7 @@ class UsersController extends Controller
                 'avg_communication_last' => $avg_communication_last,
                 'avg_health_last' => $avg_health_last,
                 'avg_work_last' => $avg_work_last,
+                'today' => $today,
             ];
         
         $data += $this->counts($user);
@@ -116,6 +121,7 @@ class UsersController extends Controller
             ]);
         
     }
+
     
     public function profile(Request $request){
         
@@ -126,5 +132,11 @@ class UsersController extends Controller
         $user->save();
         
         return redirect()->back();
+
+    public function howto()
+    {
+        $user = \Auth::user();
+        return view('users.howto');
+
     }
 }

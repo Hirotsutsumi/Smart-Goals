@@ -40,6 +40,10 @@ class WelcomeController extends Controller
             $avg_communication_last = $user->avg_last(2, $id);
             $avg_health_last = $user->avg_last(3, $id);
             $avg_work_last = $user->avg_last(4, $id);
+            //前回立てた課題
+            $query2 = Goal::query();
+            $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
+            $today = $query2->where('user_id', $user->id)->where('created_at', $latest)->get();
             
             
             
@@ -60,6 +64,7 @@ class WelcomeController extends Controller
                     'avg_communication_last' => $avg_communication_last,
                     'avg_health_last' => $avg_health_last,
                     'avg_work_last' => $avg_work_last,
+                    'today' => $today,
                 ];
         
         $data += $this->counts($user);

@@ -12,7 +12,7 @@
                     {!! Form::open(['route' => 'goals.search', 'method' => 'get']) !!}
                         <div class="form-group row">
                              <span class="col-xs-2">{!! Form::label('keyword', 'Keyword:') !!}</span>
-                             <span class="col-xs-10">{!! Form::text('keyword', old('keyword'), ['class' => 'form-control','placeholder' => 'Input Keywords']) !!}</span>
+                             <span class="col-xs-10">{!! Form::text('keyword', old('keyword'), ['class' => 'form-control','placeholder' => 'Input Keywords in English']) !!}</span>
                         </div>
                         <div class="form-group row">
                             <span class="col-xs-2">{!! Form::label('rate', 'Acheivement Rate (%):') !!}</span>
@@ -42,12 +42,12 @@
                                 '2' => 'before'], null, ['class' => 'form-control'])!!}
                                 </span>
                         </div>
-                        {!! Form::submit('Search!', ['class' => 'btn btn-success btn-lg']) !!}
+                        {!! Form::submit('Search!', ['class' => 'btn btn-register btn-lg']) !!}
                         {!! Form::close() !!}
                         <br>
-                        <div class="panel panel-primary" style="word-break:break-all;">
+                        <div class="panel panel-original" style="word-break:break-all;">
                             <div class="panel-heading">
-                                <h3 class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">Results</h3>
+                                <h3 class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif">Search Results</h3>
                             </div>
                         @include('goals.search-index', ['goals' => $goals])
                     </div>

@@ -137,7 +137,7 @@ class User extends Authenticatable
         $exist = \DB::table('goals')->selectRaw('*')->where('category', $category)->where('user_id', $userId)->whereBetween('created_at', [$weekday, $today])->exists();
         //今週のデータがあるかどうか
             if($exist){
-                $temp = \DB::table('goals')->selectRaw('AVG(rate) average, WEEK(created_at) week')->where('category', $category)->where('user_id', $userId)->orderBy('week', 'DESC')->groupBy('week')->first(); 
+                $temp = \DB::table('goals')->selectRaw('AVG(rate) average, extract(week from created_at) week')->where('category', $category)->where('user_id', $userId)->orderBy('week', 'DESC')->groupBy('week')->first(); 
             //あったら
                 $sub = $temp->average;
             }
@@ -162,13 +162,13 @@ class User extends Authenticatable
                 //さらに今週のデータがあるかどうか
                 if($exist_this){
                     //あったら
-                    $temp = \DB::table('goals')->selectRaw('AVG(rate) average, WEEK(created_at) week')->where('category', $category)->where('user_id', $userId)->orderBy('week', 'DESC')->groupBy('week')->take(2)->get();
+                    $temp = \DB::table('goals')->selectRaw('AVG(rate) average, extract(week from created_at) week')->where('category', $category)->where('user_id', $userId)->orderBy('week', 'DESC')->groupBy('week')->take(2)->get();
                     $sub = $temp[1]->average;    
                 }
                 
                 else{
                     //今週のデータがなかったら
-                    $temp = \DB::table('goals')->selectRaw('AVG(rate) average, WEEK(created_at) week')->where('category', $category)->where('user_id', $userId)->orderBy('week', 'DESC')->groupBy('week')->first();
+                    $temp = \DB::table('goals')->selectRaw('AVG(rate) average, extract(week from created_at) week')->where('category', $category)->where('user_id', $userId)->orderBy('week', 'DESC')->groupBy('week')->first();
                     $sub = $temp->average;
                 }
             }
