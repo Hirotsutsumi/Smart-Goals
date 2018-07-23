@@ -2,7 +2,7 @@
 
 @section('content')
     <div class='page_title'>
-        <h1>Smart Goals List</h1>
+        <h1>KEEP List</h1>
     </div>
     <div class="col-sm-6">
         <div class="panel panel-original" style="word-break:break-all;">
