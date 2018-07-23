@@ -116,4 +116,15 @@ class UsersController extends Controller
             ]);
         
     }
+    
+    public function profile(Request $request){
+        
+        $user = \Auth::user();
+        
+        $user = User::find($user->id);
+        $user->image = $request->image;
+        $user->save();
+        
+        return redirect()->back();
+    }
 }

@@ -35,7 +35,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('followers', 'UsersController@followers')->name('users.followers');
         Route::get('collection','UsersController@collection')->name('users.collection');
     });
-
+    Route::post('profile','UsersController@profile')->name('users.profile');
+    
     Route::resource('goals', 'GoalsController', ['only' => ['create','store', 'destroy']]);
     Route::get('goals/review', 'GoalsController@review')->name('goals.review');
     Route::post('goals/reviewed', 'GoalsController@reviewed')->name('goals.reviewed');
