@@ -274,8 +274,11 @@ Object.create || (Object.create = function(obj) {
 
     // 現在の選択を解除します。
     $container.find('img.thumbnail.checked').removeClass('checked');
+    // inputboxの選択を解除する
+    $container.find('input.disabled_checkbox').prop("checked", false);
 
     // チェックを入れた状態にします。
     $(this).addClass('checked');
+    $(this).next().prop("checked", true);
   });
 });

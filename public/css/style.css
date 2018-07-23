@@ -444,13 +444,6 @@ font-family: 'Constantia',sans-serif;
   box-sizing: border-box;
 }
 
-.image-box img.thumbnail.checked {
-  /* チェックが入った状態だと、枠が表示されるようにします。 */
-  border: 6px solid blue;
-  /* 線をwidthとheightに含めるようにします。 */
-  box-sizing: border-box;
-}
-
 .image-box img.thumbnail.checked + .disabled_checkbox {
   /* 画像にcheckedクラスが指定されたときは、
   チェックボックスの非表示を解除します。 */
