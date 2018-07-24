@@ -134,7 +134,7 @@ class UsersController extends Controller
         return redirect()->back();
     }
 
-    }
+
     public function howto()
     {
         $user = \Auth::user();
