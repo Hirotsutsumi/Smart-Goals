@@ -214,19 +214,6 @@ class GoalsController extends Controller
         {
             $query->where('category', $category);
         }
-        //もしＲａｔｅがあったら
-        if(!empty($rate))
-        {
-            if($relate == '0'){
-                $query->where('rate', $rate);
-            }
-            if($relate == '1'){
-                $query->where('rate', '>=', $rate);
-            }
-            if($relate == '2'){
-                $query->where('rate', '<=', $rate);
-            }
-        }
         //もし日付があったら
         if(!empty($day))
         {

@@ -4,7 +4,6 @@
 		        <tr>
 			        <th>User</th>
 		        	<th>Smart Goal</th>
-			        <th>Acheivement Rate</th>
 			        <th>Date</th>
 			        <th>Keep</th>
 			        <th>Delete</th>
@@ -17,7 +16,6 @@
                     <?php $date = substr($goal->created_at,0,10); ?>
                     <td>{{ $user }}</td>
                     <td>{{ $goal->content }}</td>
-                    <td>{{ $goal->rate }}%</td>
                     <td>{{ $date }}</td>
                     <td>@include('good_user.good_button')</td>
                     @if (Auth::user()->id == $goal->user_id)

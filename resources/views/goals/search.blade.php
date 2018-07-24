@@ -25,15 +25,6 @@
                                 '4' =>'Work'], null, ['class' => 'form-control'])!!}      </span>
                         </div>
                         <div class="form-group row">
-                            <span class="col-xs-2">{!! Form::label('rate', 'Acheivement Rate (%):') !!}</span>
-                            <span class="col-xs-8">{!! Form::text('rate', old('rate'), ['class' => 'form-control','placeholder' => 'Input numbers']) !!}</span>
-                            <span class="col-xs-2">{!! Form::select('relate', [
-                                '0' => 'equal',
-                                '1' => 'above',
-                                '2' => 'below'], null, ['class' => 'form-control'])!!}
-                                </span>
-                        </div>
-                        <div class="form-group row">
                             <span class="col-xs-2">{!! Form::label('day', 'Date:') !!}</span>
                             <span class="col-xs-8">{!! Form::date('day', old('day'), ['class' => 'form-control']) !!}</span>
                             <span class="col-xs-2">{!! Form::select('relate2', [
