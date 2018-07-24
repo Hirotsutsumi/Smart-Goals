@@ -594,15 +594,11 @@ font-family: 'Constantia',sans-serif;
   
 }
 .table_search tr td:nth-child(3){
-  width:12%;
-  text-align: right;
+  width:6%;
 }
 .table_search tr td:nth-child(4){
   width:6%;
 }
 .table_search tr td:nth-child(5){
-  width:6%;
-}
-.table_search tr td:nth-child(6){
   width:8%;
 }

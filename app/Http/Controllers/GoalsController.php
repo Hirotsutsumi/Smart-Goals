@@ -197,11 +197,9 @@ class GoalsController extends Controller
         //キーワードなど受け取り
         $keyword = $request->keyword;
         $category = $request->category;
-        $rate = $request->rate;
-        $relate = $request->relate;
         $day = $request->day;
-        $user = $request->user;
         $relate2 = $request->relate2;
+        $user_name = $request->user_name;
         #クエリ生成
         $query = Goal::query();
         //もしキーワードがあったら
@@ -209,23 +207,17 @@ class GoalsController extends Controller
         {
             $query->where('content','like','%'.$keyword.'%');
         }
+        //もしuser_nameがあったら
+        if(!empty($user_name))
+        {
+            $user_id = \DB::table('users')->where('name', $user_name)->value('id');
+            
+            $query->where('user_id', $user_id);
+        }
         //もしカテゴリがあったら
         if(!empty($category))
         {
             $query->where('category', $category);
-        }
-        //もしＲａｔｅがあったら
-        if(!empty($rate))
-        {
-            if($relate == '0'){
-                $query->where('rate', $rate);
-            }
-            if($relate == '1'){
-                $query->where('rate', '>=', $rate);
-            }
-            if($relate == '2'){
-                $query->where('rate', '<=', $rate);
-            }
         }
         //もし日付があったら
         if(!empty($day))

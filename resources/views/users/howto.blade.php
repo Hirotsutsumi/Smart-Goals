@@ -64,6 +64,9 @@
                 <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
             </div>
             </section>
+            <div class='text-right'>
+                <a class='' href="#howtouse">↑ page_top</a>
+            </div>
             <section  id="search">
                  <div class="skill-box">
                     <img src="{{ secure_asset("images/search.png") }}" alt="howtouse">
@@ -92,6 +95,9 @@
                     <img src="{{ secure_asset("images/keep.png") }}" alt="howtouse">
                 </div>
             </section>
+            <div class='text-right'>
+                <a class='' href="#howtouse">↑ page_top</a>
+            </div>
             <section  id="kinoko">
                 <div class="skill-box">
                     <img src="{{ secure_asset("images/kinoko.png") }}" alt="howtouse">
@@ -109,7 +115,22 @@
                     <a class="btn btn-register btn-lg" href="{{ route('goals.create') }}">CREATE SMART GOAL</a>
                  </div>
             </section>
+            <div class='text-right'>
+                <a class='' href="#howtouse">↑ page_top</a>
+            </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+$(function(){
+    $('a[href^=#]').click(function(){
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
 @endsection
