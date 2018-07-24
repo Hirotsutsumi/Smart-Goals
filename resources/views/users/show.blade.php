@@ -87,7 +87,7 @@
 			                display: true,
 			                pointLabels: {
 				            fontSize: 15,
-				            fontColor: colorSet.yellow
+				            fontColor: colorSet.blue,
 			           },
 			    ticks: {
 			 	            display: true,
