@@ -90,7 +90,7 @@ class UsersController extends Controller
     public function followers($id)
     {
         $user = User::find($id);
-        $followers = $user->followers()->paginate(10);
+        $followers = $user->followers()->paginate(15);
 
         $data = [
             'user' => $user,
@@ -125,6 +125,9 @@ class UsersController extends Controller
     
     public function profile(Request $request){
         
+        $this->validate($request, [
+            'image' => 'required',
+        ]);
         $user = \Auth::user();
         
         $user = User::find($user->id);
@@ -139,6 +142,5 @@ class UsersController extends Controller
     {
         $user = \Auth::user();
         return view('users.howto');
-
     }
 }

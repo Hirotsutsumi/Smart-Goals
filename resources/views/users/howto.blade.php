@@ -74,7 +74,7 @@
                             🔍Search for Smart Goalsで<br>
                             他のユーザーのSmart Goalを<br>
                             絞り込み検索！<br>
-                            ✔ボタンで他のユーザーの<br>
+                            ✔ボタンで参考にしたいユーザーの<br>
                             Smart GoalをKeep!
                         </p>
                     </div>
@@ -84,7 +84,8 @@
                     <div class="skill-title">KEEP List</div>
                         <p class="skill-text">
                             KeepしたSmart Goalを<br>
-                            Keepsページでチェックできる!
+                            Keepsページでチェックできる!<br>
+                            SmartGoal作成の時にコピーして使えます。
                         </p>
                     </div>
                 <div class="skill-box">
@@ -99,7 +100,8 @@
                     <div class="skill-title">KINOKO</div>
                         <p class="skill-text">
                         Smart Goalをたくさん設定して<br>
-                        全20種類のきのこをコンプリートしよう!
+                        全20種類のきのこをコンプリートしよう!<br>
+                        クリックするときのこの名前と獲得条件がわかる！
                         </p>
                 </div>
             </section>
