@@ -610,3 +610,13 @@ font-family: 'Constantia',sans-serif;
     -moz-border-image: border-radius: 150px;
     -webkit-border-image: border-radius: 150px;
 }
+.nav_hover{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.nav_hover:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
