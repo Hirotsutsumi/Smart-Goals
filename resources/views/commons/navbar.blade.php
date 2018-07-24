@@ -48,7 +48,7 @@
                         <li>
                             <a href= "{{ route('goals.search')}}" class="jet">
                                 <span class = "glyphicon glyphicon-search" area-hidden="true"></span>
-                                Search for Smart Goals
+                                Search
                             </a>
                         </li>
                         <li>
@@ -58,7 +58,12 @@
                             </a>
 
                         </li>
-                        
+                        <li>
+                            <a href= "{{route('users.howto')}}" class="jet">
+                                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                                HowToUse
+                            </a>
+                        </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="gravatar">
@@ -69,8 +74,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', 'My Status', ['id' => Auth::id()]) !!}</li>
-                                <li>{!! link_to_route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) !!}</li>
-                                <li>{!! link_to_route('users.howto', 'How to Use', ['id' => Auth::id()]) !!}</li>
+                                <!--<li>{!! link_to_route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) !!}</li>-->
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
                             </ul>
