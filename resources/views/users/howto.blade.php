@@ -46,7 +46,9 @@
                 <div class="skill-title">STEP2. CHECK</div>
                     <p class="skill-text">
                     左上のロゴをクリックしてMy Statusへ!<br>
-                    達成度や過去のSmart Goalをチェック!
+                    達成度や過去のSmart Goalをチェック!<br>
+                    KINOKOCollectionから<br>
+                    集まったきのこを確認しよう！
                     </p>
             </div>
             </section>
@@ -108,7 +110,9 @@
                         Smart Goalをたくさん設定して<br>
                         全20種類のきのこをコンプリートしよう!<br>
                         きのこをクリックすると<br>
-                        名前と獲得条件がわかる！
+                        名前と獲得条件がわかるります。<br>
+                        集めたきのこを選んで<br>
+                        MyStatusのアバター画像に設定しよう‼
                         </p>
                 </div>
                  <div class="buttons">
