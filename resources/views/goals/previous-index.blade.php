@@ -1,4 +1,4 @@
-    <div id="collapse0" class="panel-body previous-index-box panel-collapse collapse in">
+    <div id="collapse0" class="panel-body previous-index-box panel-collapse collapse">
         <table class="table table_previous_index">
 		    <thead>
 		        <tr>
