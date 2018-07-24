@@ -7,76 +7,21 @@
         <h1 class="site-title"> Welcome to SmartGoals</h1>
             <div class="buttons">
                 <a class="button button-showy" href="#about">ABOUT</a>
-                <a class="button button-showy" href="#howtouse">HOW TO USE</a>
             </div>
     </section>
     <section class="about" id="about">
-    <h2 class="heading">ABOUT SmartGoals</h2>
+    <h2 class="heading">SmartGoals</h2>
     <p class="about-text">
-      SmartGoalsはSmartGoalの作成をサポートします。My StatusでSmartGoalの達成率や作成日を確認できます。<br>
-      また同期のSmarGoalを検索、保存しSmarGoal作成の際に参考にすることもできます。
+      SmartGoalsはSmartGoalの作成をサポートします。<br>
+      My StatusのレーダーチャートでSmartGoalの達成率を確認できます。<br>
+      また同期のSmarGoalを検索、保存しSmarGoal作成の際に参考にすることもできます。<br>
+      使い続けることできのこを集めたり、アバター画像に設定したりもできます。<br>
+      毎日の日報作成時に使って効率よく日報を書きましょう！
     </p>
-  </section>
-    <div class="skills" id="howtouse">
-        <h2 class="heading">HOW TO USE</h2>
-        <div class="skills-wrapper">
-            <section>
-                <div class="skill-box">
-                    <img src="{{ secure_asset("images/Step0.png") }}" alt="howtouse">
-                </div>
-                <div class="skill-box">  
-                    <div class="skill-title">STEP0. REGISTER</div>
-                        <p class="skill-text">
-                        まずSmart Goalを登録、<br>
-                        目標達成してきのこを集めよう！<br>
-                        </p>
-                </div>
-            </section>
-            <section>　　　
-            <div class="skill-box">  
-                <div class="skill-title">STEP1. REVIEW</div>
-                    <p class="skill-text">
-                    Smart Goalを振り返り<br>
-                    達成率などを入力<br>
-                    出力されたテンプレートで<br>
-                    日報を作成しましょう！
-                    </p>
-            </div>
-            <div class="skill-box">
-                <img src="{{ secure_asset("images/Step1.png") }}" alt="howtouse">
-            </div>
-            </section>
-            <section>
-            <div class="skill-box">
-                <img src="{{ secure_asset("images/Step2.png") }}" alt="howtouse">
-            </div>
-            <div class="skill-box">  
-                <div class="skill-title">STEP2. CHECK</div>
-                    <p class="skill-text">
-                    左上のロゴをクリックしてMy Statusへ!<br>
-                    達成度や過去のSmart Goalをチェック!
-                    </p>
-            </div>
-            </section>
-            <section>
-            <div class="skill-box">  
-                <div class="skill-title">STEP3. ADD</div>
-                    <p class="skill-text">
-                    Smart Goalを追加すると<br>
-                    テンプレートが出力されます<br>
-                    出力されたテンプレートをコピーして<br>
-                    日報完成！
-                    </p>
-            </div>
-            <div class="skill-box">
-                <img src="{{ secure_asset("images/Step3.png") }}" alt="howtouse">
-            </div>
-            </section>
-            <div class="buttons">
-                <a class="button button-showyy" href="{{ route('signup.get') }}">SIGN UP!</a>
-            </div>
-        </div>
+    <div class="buttons">
+        <a class="button button-showy" href="{{ route('signup.get') }}">SIGN UP</a>
     </div>
+  </section>
     <div class="main-top">
         <section id="contact">
             <h2 class="heading">ABOUT US</h2>
