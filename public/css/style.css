@@ -266,6 +266,14 @@ a.jet {
   border-color: black;
   font-size: 15px;
 }
+.button-sh {
+  background-image: none;
+  background-color: #fac559;
+  color: black;
+  border-color: black;
+  font-size: 15px;
+  width:250px;
+}
 
 /*レビューテンプレートのページのボタン*/
 .button-showw{
@@ -560,4 +568,41 @@ font-family: 'Constantia',sans-serif;
 }
 .table_previous_index tr td:nth-child(2) {
   text-align: right;
+}
+/*テーブルの列幅　Showページ*/
+.table_goals_index tr td:nth-child(1){ 
+  width:8%;
+}
+.table_goals_index tr td:nth-child(2){ 
+  width:60%;
+}
+.table_goals_index tr td:nth-child(3){ 
+  width:16%;
+  text-align: right;
+}
+.table_goals_index tr td:nth-child(4){ 
+  width:6%;
+}
+.table_goals_index tr td:nth-child(5){ 
+  width:10%;
+}
+/*searchtableの幅合わせ*/
+.table_search tr td:nth-child(1){
+  width:12%;
+}
+.table_search tr td:nth-child(2){
+  
+}
+.table_search tr td:nth-child(3){
+  width:12%;
+  text-align: right;
+}
+.table_search tr td:nth-child(4){
+  width:6%;
+}
+.table_search tr td:nth-child(5){
+  width:6%;
+}
+.table_search tr td:nth-child(6){
+  width:8%;
 }

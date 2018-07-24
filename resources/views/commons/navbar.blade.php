@@ -61,14 +61,14 @@
                         
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="prof">
-                                    <img src="{{ Gravatar::src(Auth::user()->image, 20) . '&d=mm' }}" alt="" class="img-circle">
+                                <span class="gravatar">
+                                    <img src="{{ Gravatar::src(Auth::user()->name, 20) . '&d=mm' }}" alt="" class="img-circle">
                                 </span>
                                 {{ Auth::user()->name }}
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</li>
+                                <li>{!! link_to_route('users.show', 'My Status', ['id' => Auth::id()]) !!}</li>
                                 <li>{!! link_to_route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) !!}</li>
                                 <li>{!! link_to_route('users.howto', 'How to Use', ['id' => Auth::id()]) !!}</li>
                                 <li role="separator" class="divider"></li>

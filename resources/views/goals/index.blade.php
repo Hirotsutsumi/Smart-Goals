@@ -1,5 +1,5 @@
     <div class="panel-body index-box">
-        <table class="table">
+        <table class="table table_goals_index">
 		    <thead>
 		        <tr>
 			        <th>Date</th>
