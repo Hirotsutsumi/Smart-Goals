@@ -17,7 +17,7 @@
                     @endif
                 </div>
                 <div class="buttons">
-                    <a class="btn btn-register btn-block" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">KINONO Collection</a>
+                    <a class="btn btn-register btn-block" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">KINOKO Collection</a>
                 </div>
                 <div class="panel-body">    
                   <div><canvas id="myChart" height="500px" width="300px"></canvas></div>
