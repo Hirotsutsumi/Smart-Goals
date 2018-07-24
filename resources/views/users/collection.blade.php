@@ -4,10 +4,6 @@
 <div class="kinoko-container">
   <h1>KINOKO COLLECTION</h1>
   {!! Form::open(['route' => 'users.profile']) !!}
-  <div>
-    {!! Form::submit('Change avatar (choose from the list below and click!)', ['class' => 'btn btn-register btn-block hover', 'style' => 'font-weight:bold; font-size:large']) !!}
-  <br>
-  </div>
   <div class="container">
     <div class="image-box">
       <a href="{{ asset  ('images/defaultkinoko1.jpg') }}" data-lightbox="kinoko" data-title="きのこ<br>サインアップすると仲間になるよ">
@@ -250,6 +246,10 @@
     @endif
     </div>  
   </div>
+      <div>
+        {!! Form::submit('Change avatar (choose from the list above and click!)', ['class' => 'btn btn-register btn-block hover', 'style' => 'font-weight:bold; font-size:large']) !!}
+      <br>
+      </div>
   {!! Form::close() !!}
 </div>
 @endsection
