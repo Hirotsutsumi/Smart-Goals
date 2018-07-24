@@ -1,5 +1,5 @@
     <div class="panel-body index-box">
-        <table class="table table-hover">
+        <table class="table">
 		    <thead>
 		        <tr>
 			        <th>Date</th>

@@ -1,5 +1,5 @@
     <div class="panel-body search-box">
-        <table class="table table-hover">
+        <table class="table">
 		    <thead>
 		        <tr>
 			        <th>User</th>
