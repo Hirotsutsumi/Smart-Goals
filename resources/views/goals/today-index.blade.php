@@ -20,6 +20,7 @@
                         <?php endforeach; ?>
             	        </tbody>
         	        </table>
+        	        <a class="btn btn-register btn-block" href="{{ route('goals.review') }}">Review Today's Goals</a>
                 </div>
             </div>
         </div>

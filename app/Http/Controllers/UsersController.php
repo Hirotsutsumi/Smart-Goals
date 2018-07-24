@@ -141,7 +141,7 @@ class UsersController extends Controller
         $user->image = $request->image;
         $user->save();
         
-        return redirect()->back();
+        return redirect('/');
     }
 
 

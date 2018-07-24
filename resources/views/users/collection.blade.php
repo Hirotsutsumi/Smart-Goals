@@ -3,8 +3,12 @@
 @section('content')
 <div class="kinoko-container">
   <h1>KINOKO COLLECTION</h1>
-   {!! Form::open(['route' => 'users.profile']) !!}
-  <div class="container"></div>
+  {!! Form::open(['route' => 'users.profile']) !!}
+  <div>
+    {!! Form::submit('Change avatar (choose from the list below and click!)', ['class' => 'btn btn-register btn-block hover', 'style' => 'font-weight:bold; font-size:large']) !!}
+  <br>
+  </div>
+  <div class="container">
     <div class="image-box">
       <a href="{{ asset  ('images/defaultkinoko1.jpg') }}" data-lightbox="kinoko" data-title="きのこ<br>サインアップすると仲間になるよ">
         <img class="thumbnail" src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
@@ -58,6 +62,7 @@
       <img class="thumbnail" src="{{ asset ('images/kakushikinoko.jpg') }}"></img>
     </a>
     @endif
+    </div>
     </div>
   <div class="container">
     <div class="image-box">
@@ -245,7 +250,6 @@
     @endif
     </div>  
   </div>
-  {!! Form::submit('Register', ['class' => 'btn btn-register btn-block']) !!}
   {!! Form::close() !!}
 </div>
 @endsection

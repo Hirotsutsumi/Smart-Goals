@@ -28,6 +28,7 @@
                                 </div>
                                 <div class='text-right'>
                                      <button id='btnCopy' class="btn"><span class='glyphicon glyphicon-copy'> copy</span></button>
+                                     <a class="btn btn-register btn" href="/"><span class="glyphicon glyphicon-home"> Home</span></a>
                                 </div>
                             </div>
                         </div>

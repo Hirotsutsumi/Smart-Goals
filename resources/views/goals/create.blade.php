@@ -102,7 +102,7 @@
                         </div>
                         @include('goals.keep-index', ['goals' => $keeps])
                     </div>
-                    <div class="panel panel-success" style="word-break:break-all;" style="height:300px;">
+                    <div class="panel panel-success" style="word-break:break-all;">
                         <div class="panel-heading">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">How about these goals?</a>
                         </div>
