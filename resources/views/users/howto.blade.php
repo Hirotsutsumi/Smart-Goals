@@ -112,7 +112,7 @@
                         </p>
                 </div>
                  <div class="buttons">
-                    <a class="btn btn-register btn-lg" href="{{ route('goals.create') }}">CREATE SMART GOAL</a>
+                    <a class="btn btn-register btn-lg href="{{ route('goals.create') }}">CREATE SMART GOAL</a>
                  </div>
             </section>
             <div class='text-right'>
