@@ -4,7 +4,7 @@
     <div class="row">
         <aside class="col-sm-4">
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading prof">
                     <h2 class="panel-title">{{ $user->name }}</h3>
                     @if($user->image)
                     

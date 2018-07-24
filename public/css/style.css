@@ -250,6 +250,9 @@ a.jet {
 .button:hover {
   opacity: 0.9;
 }
+.btn:hover{
+  opacity: 0.7;
+}
 .button-showy {
   background-color: #D29E04;
   font-size: 20px;
@@ -420,8 +423,8 @@ a.jet {
  
  
  .image-box img.thumbnail{
-   width: 200px;
-   height: 160px;
+   width: 150px;
+   height: 120px;
  }
  
  .kinoko-container h1{
@@ -601,4 +604,9 @@ font-family: 'Constantia',sans-serif;
 }
 .table_search tr td:nth-child(5){
   width:8%;
+}
+.prof img {
+    border-radius: 150px;
+    -moz-border-image: border-radius: 150px;
+    -webkit-border-image: border-radius: 150px;
 }
