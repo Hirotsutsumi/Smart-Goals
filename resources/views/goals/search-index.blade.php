@@ -1,5 +1,5 @@
     <div class="panel-body search-box">
-        <table class="table">
+        <table class="table table_search">
 		    <thead>
 		        <tr>
 			        <th>User</th>

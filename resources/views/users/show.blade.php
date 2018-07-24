@@ -15,6 +15,8 @@
                     <img src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
                     
                     @endif
+                </div>
+                <div class="panel-body">    
                   <div><canvas id="myChart" height="500px" width="300px"></canvas></div>
                   <script>
 
