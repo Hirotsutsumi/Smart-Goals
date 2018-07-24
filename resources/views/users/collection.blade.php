@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="kinoko-container">
+<div class="kinoko-container text-center">
   <h1>KINOKO COLLECTION</h1>
   {!! Form::open(['route' => 'users.profile']) !!}
   <div class="container">
