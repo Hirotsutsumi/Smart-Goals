@@ -8,16 +8,16 @@
                     <h2 class="panel-title">{{ $user->name }}</h3>
                     @if($user->image)
                     
-                      <img src="{{asset ($user->image) }}"></img>
+                      <img src="{{asset ($user->image) }}">
                       
                     @else
                     
-                    <img src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
+                    <img src="{{ asset  ('images/defaultkinoko1.jpg') }}">
                     
                     @endif
                 </div>
                 <div class="buttons">
-                    <a class="btn btn-register btn-block" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">KINONO Collection</a>
+                    <a class="btn btn-register btn-block" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">KINOKO Collection</a>
                 </div>
                 <div class="panel-body">    
                   <div><canvas id="myChart" height="500px" width="300px"></canvas></div>
@@ -87,7 +87,7 @@
 			                display: true,
 			                pointLabels: {
 				            fontSize: 15,
-				            fontColor: colorSet.yellow
+				            fontColor: colorSet.blue,
 			           },
 			    ticks: {
 			 	            display: true,
