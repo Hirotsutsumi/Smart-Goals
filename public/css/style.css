@@ -111,7 +111,6 @@ a.jet {
 }
 
 .previous-index-box{
-    height:170px;
     box-shadow: 5px 5px 10px #000;
     -webkit-box-shadow: 5px 5px 10px #000;
     -moz-box-shadow: 5px 5px 10px #000;
@@ -553,4 +552,29 @@ font-family: 'Constantia',sans-serif;
 	max-height: 100%;
 	display: block;
 	margin: 0 auto;
+}
+
+/*テーブルの列幅固定*/
+.table_previous_index tr td:nth-child(1) {
+  width:73%;
+}
+.table_previous_index tr td:nth-child(2) {
+  text-align: right;
+}
+/*テーブルの列幅　Showページ*/
+.table_goals_index tr td:nth-child(1){ 
+  width:8%;
+}
+.table_goals_index tr td:nth-child(2){ 
+  width:60%;
+}
+.table_goals_index tr td:nth-child(3){ 
+  width:16%;
+  text-align: right;
+}
+.table_goals_index tr td:nth-child(4){ 
+  width:6%;
+}
+.table_goals_index tr td:nth-child(5){ 
+  width:10%;
 }

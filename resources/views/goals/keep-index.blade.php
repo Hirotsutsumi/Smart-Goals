@@ -3,7 +3,6 @@
 		    <thead>
 		        <tr>
 		        	<th>Smart Goal</th>
-	                <th>Keep</th>
 	            </tr>
 	       </thead>
 	       <tbody>
@@ -11,7 +10,6 @@
                 <tr>
                     <?php $date = substr($goal->created_at,0,10); ?>
                     <td>{{ $goal->content }}</td>
-                    <td>@include('good_user.good_button')</td>
                 </tr>
                 <?php endforeach; ?>
 	        </tbody>

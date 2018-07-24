@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
                 <div class="text-center">
-                    <div class="panel panel-original">
+                    <div class="panel panel-original" style="word-break:break-all;">
                         <div class="panel-heading">
                             <h2 class="panel-title" style=>Today's Goals</h2>
                         </div>
