@@ -15,16 +15,7 @@
                              <span class="col-xs-10">{!! Form::text('keyword', old('keyword'), ['class' => 'form-control','placeholder' => 'Input Keywords in English']) !!}</span>
                         </div>
                         <div class="form-group row">
-                            <span class="col-xs-2">{!! Form::label('rate', 'Acheivement Rate (%):') !!}</span>
-                            <span class="col-xs-8">{!! Form::text('rate', old('rate'), ['class' => 'form-control','placeholder' => 'Input numbers']) !!}</span>
-                            <span class="col-xs-2">{!! Form::select('relate', [
-                                '0' => 'equal',
-                                '1' => 'above',
-                                '2' => 'below'], null, ['class' => 'form-control'])!!}
-                                </span>
-                        </div>
-                        <div class="form-group row">
-                             <span class="col-xs-2">{!! Form::label('category', 'Category:') !!}</span>
+                            <span class="col-xs-2">{!! Form::label('category', 'Category:') !!}</span>
                             <span class="col-xs-10">{!! Form::select('category', [
                                 '' => 'Choose category',
                                 '0' => 'Study',
@@ -32,6 +23,15 @@
                                 '2' => 'Communication',
                                 '3' => 'Health',
                                 '4' =>'Work'], null, ['class' => 'form-control'])!!}      </span>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-xs-2">{!! Form::label('rate', 'Acheivement Rate (%):') !!}</span>
+                            <span class="col-xs-8">{!! Form::text('rate', old('rate'), ['class' => 'form-control','placeholder' => 'Input numbers']) !!}</span>
+                            <span class="col-xs-2">{!! Form::select('relate', [
+                                '0' => 'equal',
+                                '1' => 'above',
+                                '2' => 'below'], null, ['class' => 'form-control'])!!}
+                                </span>
                         </div>
                         <div class="form-group row">
                             <span class="col-xs-2">{!! Form::label('day', 'Date:') !!}</span>

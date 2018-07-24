@@ -6,7 +6,7 @@
                     <h3 class="panel-title">Today's Goal</h3>
                 </div>
                 <div class="panel-body previous-index-box">
-                    <table class="table table-hover">
+                    <table class="table">
 	                    <thead>
 	                        <tr>
 		                    	<th>Smart Goal</th>
