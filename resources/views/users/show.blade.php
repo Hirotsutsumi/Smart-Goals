@@ -8,11 +8,11 @@
                     <h2 class="panel-title">{{ $user->name }}</h3>
                     @if($user->image)
                     
-                      <img src="{{asset ($user->image) }}"></img>
+                      <img src="{{asset ($user->image) }}">
                       
                     @else
                     
-                    <img src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
+                    <img src="{{ asset  ('images/defaultkinoko1.jpg') }}">
                     
                     @endif
                 </div>
