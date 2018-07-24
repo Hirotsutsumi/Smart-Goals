@@ -20,7 +20,7 @@
                         <!--    </a>-->
                         <!--</li>-->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 
                                 Goals (Review&Create)
@@ -60,7 +60,7 @@
                         </li>
                         
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-toggle jet" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="gravatar">
                                     <img src="{{ Gravatar::src(Auth::user()->name, 20) . '&d=mm' }}" alt="" class="img-circle">
                                 </span>
