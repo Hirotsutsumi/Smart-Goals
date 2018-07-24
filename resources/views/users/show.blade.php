@@ -5,15 +5,16 @@
         <aside class="col-sm-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h2 class="panel-title text-center">{{ $user->name }}</h3>
-                    </br>
+                    <h2 class="panel-title">{{ $user->name }}</h3>
                     @if($user->image)
-                        <img src="{{asset ($user->image) }}" class="img-circle"></img>
+                    
+                      <img src="{{asset ($user->image) }}"></img>
+                      
                     @else
-                        <img src="{{ asset  ('images/defaultkinoko1.jpg') }}" class="img-circle"></img>
+                    
+                    <img src="{{ asset  ('images/defaultkinoko1.jpg') }}"></img>
+                    
                     @endif
-                </div>
-                <div class="panel-body">
                   <div><canvas id="myChart" height="500px" width="300px"></canvas></div>
                   <script>
 
@@ -73,7 +74,7 @@
 	                    	legend: { position: 'bottom' },
 		        title: {
 		                	display: true,
-		                 	fontSize:18,
+		                 	fontSize:20,
 			                fontColor:'#666',
 			                text: 'Accomplishment'
 		                },
