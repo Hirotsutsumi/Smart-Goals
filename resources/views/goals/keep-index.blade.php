@@ -1,5 +1,5 @@
     <div id="collapse1" class="panel-body index-box panel-collapse collapse">
-        <table class="table table-hover">
+        <table class="table">
 		    <thead>
 		        <tr>
 		        	<th>Smart Goal</th>
