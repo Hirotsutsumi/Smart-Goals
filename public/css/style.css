@@ -111,7 +111,6 @@ a.jet {
 }
 
 .previous-index-box{
-    height:170px;
     box-shadow: 5px 5px 10px #000;
     -webkit-box-shadow: 5px 5px 10px #000;
     -moz-box-shadow: 5px 5px 10px #000;
@@ -553,4 +552,12 @@ font-family: 'Constantia',sans-serif;
 	max-height: 100%;
 	display: block;
 	margin: 0 auto;
+}
+
+/*テーブルの列幅固定*/
+.table_previous_index tr td:nth-child(1) {
+  width:73%;
+}
+.table_previous_index tr td:nth-child(2) {
+  text-align: right;
 }

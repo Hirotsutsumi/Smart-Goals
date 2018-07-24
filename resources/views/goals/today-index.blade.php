@@ -1,7 +1,7 @@
 <ul class="media-list">
     <li class="media">
         <div class="media-body">
-            <div class="panel panel-original" style="word-break:break-all; height:210px;">
+            <div class="panel panel-original" style="word-break:break-all;">
                 <div class="panel-heading">
                     <h3 class="panel-title">Today's Goal</h3>
                 </div>
