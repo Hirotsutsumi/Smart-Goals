@@ -570,7 +570,7 @@ font-family: 'Constantia',sans-serif;
   width:73%;
 }
 .table_previous_index tr td:nth-child(2) {
-  text-align: right;
+  text-align: center;
 }
 /*テーブルの列幅　Showページ*/
 .table_goals_index tr td:nth-child(1){ 
