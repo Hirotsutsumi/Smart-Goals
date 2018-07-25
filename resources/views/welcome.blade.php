@@ -14,8 +14,8 @@
     <p class="about-text">
       SmartGoalsはSmartGoalの作成をサポートします。<br>
       My StatusのレーダーチャートでSmartGoalの達成率を確認できます。<br>
-      また同期のSmarGoalを検索、保存しSmarGoal作成の際に参考にすることもできます。<br>
-      使い続けることできのこを集めたり、アバター画像に設定したりもできます。<br>
+      また同期のSmarGoalを検索、KeepしてSmarGoal作成の際に参考にすることもできます。<br>
+      使い続けることできのこが集まり、アバター画像に設定することもできます。<br>
       毎日の日報作成時に使って効率よく日報を書きましょう！
     </p>
     <div class="buttons">
