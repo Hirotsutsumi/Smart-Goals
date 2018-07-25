@@ -1,23 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class='top'>
-    <div class="skills">
-        <div class="skills-wrapper">
            <section>
             <div class="skill-box">
-                <img src="{{ secure_asset("images/onoshin.png") }}" alt="onoshin">
+                <img src="{{ secure_asset("images/onoshin5.png") }}" alt="onoshin">
             </div>
             <div class="skill-box">  
-                <div class="skill-title">まずはSmartGoalを追加しよう！</div>
+                <div class="error-title">Woops!!</div>
                     <p class="skill-text">
+                        まずはSmartGoalを追加しよう！<br>
+                        Smart Goalを追加すると
+                        Reviewできるようになるよ！<br><br>
                     </p>
-            </div>
-             <div class="buttons">
-                    <a class="button button-sho" href="{{ route('goals.create') }}">CREATE FIRST Smart Goals</a>
+                     <div class="buttons">
+                    <a class="btn btn-register btn-block" href="{{ route('goals.create') }}">CREATE SMART GOALS</a>
+                    </div>
              </div>
+            </div>
             </section>
-        </div>
-    </div>
-</div>
+        
 @endsection
