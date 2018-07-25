@@ -183,7 +183,7 @@ class GoalsController extends Controller
         }
         
         else{
-            return redirect('/');
+            return view('users.error');
             //あとでエラーページに差し替え
         }
             
