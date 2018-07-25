@@ -47,6 +47,7 @@ class UsersController extends Controller
             $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at'); //日付の取得（文字列）
             $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
             $today = $query2->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
+            $today_null = $query2->where('user_id', $user->id)->whereNull('rate')->whereDate('created_at', $latest_date)->get();
             
             
             
@@ -68,6 +69,7 @@ class UsersController extends Controller
                     'avg_health_last' => $avg_health_last,
                     'avg_work_last' => $avg_work_last,
                     'today' => $today,
+                    'today_null'=> $today_null,
                 ];
             
             $data += $this->counts($user);

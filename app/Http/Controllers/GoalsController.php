@@ -141,7 +141,7 @@ class GoalsController extends Controller
             $query = Goal::query();
             $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at'); //日付の取得（文字列）
             $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
-            $goals = $query->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
+            $goals = $query->where('user_id', $user->id)->whereNull('rate')->whereDate('created_at', $latest_date)->get();
            
             
         

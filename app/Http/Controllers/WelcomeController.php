@@ -45,7 +45,8 @@ class WelcomeController extends Controller
             $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
             $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
             $today = $query2->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
-
+            $today_null = $query2->where('user_id', $user->id)->whereNull('rate')->whereDate('created_at', $latest_date)->get();
+            
             $data = [
                     'user' => $user,
                     'study' => $study,
@@ -64,6 +65,7 @@ class WelcomeController extends Controller
                     'avg_health_last' => $avg_health_last,
                     'avg_work_last' => $avg_work_last,
                     'today' => $today,
+                    'today_null' => $today_null,
                 ];
         
         $data += $this->counts($user);
