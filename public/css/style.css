@@ -97,7 +97,9 @@ footer {
 
 a.jet {  
   color: inherit;
+  transition: 0.2s ease-out;
 }
+
 
 
 .btn-original.focus,.btn-original:focus{
