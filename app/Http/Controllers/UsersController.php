@@ -44,8 +44,9 @@ class UsersController extends Controller
             $avg_work_last = $user->avg_last(4, $user->id);
             //前回立てた目標
             $query2 = Goal::query();
-            $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
-            $today = $query2->where('user_id', $user->id)->where('created_at', $latest)->get();
+            $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at'); //日付の取得（文字列）
+            $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
+            $today = $query2->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
             
             
             
