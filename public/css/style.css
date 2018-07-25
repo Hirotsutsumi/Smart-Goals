@@ -570,7 +570,7 @@ font-family: 'Constantia',sans-serif;
   width:73%;
 }
 .table_previous_index tr td:nth-child(2) {
-  text-align: right;
+  text-align: center;
 }
 /*テーブルの列幅　Showページ*/
 .table_goals_index tr td:nth-child(1){ 
@@ -609,4 +609,14 @@ font-family: 'Constantia',sans-serif;
     border-radius: 150px;
     -moz-border-image: border-radius: 150px;
     -webkit-border-image: border-radius: 150px;
+}
+.nav_hover{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.nav_hover:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }

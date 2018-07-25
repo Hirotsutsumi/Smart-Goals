@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-left" href="/"><img src="{{ secure_asset("images/logo2.jpg") }}" alt="onoshin"></a>
+                <a class="navbar-left" href="/"><img src="{{ secure_asset("images/logo2.jpg") }}" alt="onoshin" class='nav_hover'></a>
             </div>
             <div class="collapse navbar-collapse navbar_original" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
