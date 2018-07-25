@@ -43,10 +43,9 @@ class WelcomeController extends Controller
             //前回立てた課題
             $query2 = Goal::query();
             $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
-            $today = $query2->where('user_id', $user->id)->where('created_at', $latest)->get();
-            
-            
-            
+            $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
+            $today = $query2->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
+
             $data = [
                     'user' => $user,
                     'study' => $study,
