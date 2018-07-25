@@ -17,7 +17,7 @@
                     @endif
                 </div>
                 <div class="buttons">
-                    <a class="btn btn-register btn-block" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">KINOKO Collection</a>
+                    <a class="btn btn-register btn-block" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">KINOKO COLLECTION</a>
                 </div>
                 <div class="panel-body">    
                   <div><canvas id="myChart" height="500px" width="300px"></canvas></div>
@@ -131,7 +131,7 @@
                 @include('goals.today-index', ['goals' => $today])
             @else
                 <img src="{{asset ('images/create.png') }}">
-                <a class="btn btn-register btn-block" href="{{ route('goals.create') }}">Create Next's Goals</a>
+                <a class="btn btn-register btn-block" href="{{ route('goals.create') }}">CREATE SMART GOALS</a>
             @endif
             @if (count($health)+count($communication)+count($private)+count($study)+count($work) != 0)
                 @include('goals.goals')
