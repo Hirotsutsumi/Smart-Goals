@@ -38,8 +38,9 @@ class GoalsController extends Controller
         $recommends = $query->select('content')->groupBy('content')->inRandomOrder()->take(10)->get();
         
         $query2 = Goal::query();
-        $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
-        $previous = $query2->where('user_id', $user->id)->where('created_at', $latest)->get();
+        $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at'); //日付の取得（文字列）
+        $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
+        $previous = $query2->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
         
         return view('goals.create', [
             'goal' => $goal,
@@ -138,8 +139,9 @@ class GoalsController extends Controller
         if (\Auth::check()) {
             $user = \Auth::user();
             $query = Goal::query();
-            $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
-            $goals = $query->where('user_id', $user->id)->where('created_at', $latest)->get();
+            $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at'); //日付の取得（文字列）
+            $latest_date = date("Y-m-d",strtotime($latest)); //strtotimeで変換さらに日付のみにする
+            $goals = $query->where('user_id', $user->id)->whereDate('created_at', $latest_date)->get();
            
             
         
