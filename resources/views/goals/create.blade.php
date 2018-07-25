@@ -91,20 +91,20 @@
                     @if(count($previous) >0)
                         <div class="panel panel-info" style="word-break:break-all;">
                             <div class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse0" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">Previous goals</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse0" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">▼ Previous goals</a>
                             </div>
                             @include('goals.previous-index', ['goals' => $previous])
                         </div>
                     @endif
                     <div class="panel panel-warning" style="word-break:break-all;">
                         <div class="panel-heading">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">Your Keeps</a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">▼ Your Keeps</a>
                         </div>
                         @include('goals.keep-index', ['goals' => $keeps])
                     </div>
                     <div class="panel panel-success" style="word-break:break-all;">
                         <div class="panel-heading">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">How about these goals?</a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title" style="font-family:'ＭＳ　ゴシック', sans-serif; color:black">▼ How about these goals?</a>
                         </div>
                         @include('goals.create-index', ['goals' => $recommends])
                     </div>
