@@ -52,13 +52,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('ranking.good') }}" class="jet">
-                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                Keeps
-                            </a>
-
-                        </li>
-                        <li>
                             <a href= "{{route('users.howto')}}" class="jet">
                                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
                                 HowToUse
@@ -71,7 +64,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>{!! link_to_route('users.show', 'My Status', ['id' => Auth::id()]) !!}</li>
-                                <!--<li>{!! link_to_route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) !!}</li>-->
+                                <li>{!! link_to_route('ranking.good', 'Manage Your Keeps') !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
                             </ul>
