@@ -39,7 +39,7 @@
                         <?php endforeach; ?>
             	        </tbody>
         	        </table>
-        	        <a class="btn btn-register btn-block" href="{{ route('goals.create') }}">Create Next's Goals</a>
+        	        <a class="btn btn-register btn-block" href="{{ route('goals.create') }}">Create Next Goals</a>
                     <?php } ?>
                 </div>
             </div>

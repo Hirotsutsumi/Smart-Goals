@@ -20,7 +20,7 @@
 
                     <a class="btn btn-register btn-block disappear" href="{{ route('users.collection', 'KINOKO COLLECTION', ['id' => Auth::id()]) }}">
                     
-                            <img src="{{asset('images/btn-left.png' )}}"> KINOKO Collection <img src="{{asset('images/btn-right.png' )}}">
+                            <img src="{{asset('images/btn-left.png' )}}"> KINOKO COLLECTION <img src="{{asset('images/btn-right.png' )}}">
                     
                     </a>
 
