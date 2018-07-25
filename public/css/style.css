@@ -67,6 +67,26 @@ footer {
     border-color: black;
 }
 
+.btn-kinoko_collection{
+    background-image: none;
+    background-color: #fac559;
+    color: black;
+    border-color: black;
+}
+
+.disappear>img{
+  filter: alpha(opacity=0);
+  -moz-opacity:0;
+  opacity:0;
+  transition: opacity 0.6s ease-out;
+}
+.disappear:hover >img{
+  filter: alpha(opacity=100);
+  -moz-opacity:1;
+  opacity:1;
+}
+
+
 .navbar-original{
     background:black;
     color: #fac559;
@@ -247,11 +267,12 @@ a.jet {
   letter-spacing: 1px;
   font-size: 1.2rem;
 }
-.button:hover {
+
+.btn:hover{
   opacity: 0.9;
 }
-.btn:hover{
-  opacity: 0.7;
+.btn-register:hover{
+  font-weight: bold;
 }
 .button-showy {
   background-color: #D29E04;
