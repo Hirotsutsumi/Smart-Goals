@@ -6,7 +6,7 @@
                     <h3 class="panel-title">Today's Goal</h3>
                 </div>
                 <div class="panel-body previous-index-box">
-                    <?php if(!isset($goals[0]->rate)){ ?> 
+                    <?php if(!isset($goals[0]->rate)){ //2番目だけ入れるとかは無理なのでとりあえずこれでいいか?> 
                     <table class="table">
 	                    <thead>
 	                        <tr>

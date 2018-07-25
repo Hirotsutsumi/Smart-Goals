@@ -141,7 +141,7 @@ class GoalsController extends Controller
             $latest = \DB::table('goals')->where('user_id', $user->id)->max('created_at');
             $goals = $query->where('user_id', $user->id)->where('created_at', $latest)->get();
            
-        $id = \Auth::user()->id;
+            
         
 
         
@@ -157,6 +157,7 @@ class GoalsController extends Controller
             'rate.*' => 'required|numeric',
         ]);
         
+        if(isset($request['rate'])){
         foreach($request['rate'] as $key => $rate){
             $id = $request['id'][$key];
             
@@ -179,6 +180,13 @@ class GoalsController extends Controller
             'reviews' => $reviews,
             'steps' => $steps,           
             ]);
+        }
+        
+        else{
+            return redirect('/');
+            //あとでエラーページに差し替え
+        }
+            
     }
     
      public function destroy($id)

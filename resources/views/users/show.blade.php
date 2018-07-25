@@ -129,6 +129,9 @@
          <!--   </ul>-->
             @if (count($today) != 0)
                 @include('goals.today-index', ['goals' => $today])
+            @else
+                <img src="{{asset ('images/create.png') }}">
+                <a class="btn btn-register btn-block" href="{{ route('goals.create') }}">Create Next's Goals</a>
             @endif
             @if (count($health)+count($communication)+count($private)+count($study)+count($work) != 0)
                 @include('goals.goals')
