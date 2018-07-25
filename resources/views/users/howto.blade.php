@@ -19,7 +19,7 @@
                 <div class="skill-box">  
                     <div class="skill-title">STEP0. REGISTER</div>
                         <p class="skill-text">
-                        まずSmart Goalを登録、<br>
+                        Sign UpしたらSmart Goalを登録、<br>
                         目標達成してきのこを集めよう！<br>
                         </p>
                 </div>
@@ -45,7 +45,7 @@
             <div class="skill-box">  
                 <div class="skill-title">STEP2. CHECK</div>
                     <p class="skill-text">
-                    左上のロゴをクリックしてMy Statusへ!<br>
+                    ロゴをクリックしてMy Statusへ!<br>
                     達成度や過去のSmart Goalをチェック!<br>
                     KINOKOCollectionから<br>
                     集まったきのこを確認しよう！
@@ -76,9 +76,8 @@
                 <div class="skill-box">  
                     <div class="skill-title">SEARCH</div>
                         <p class="skill-text">
-                            🔍Search for Smart Goalsで<br>
-                            他のユーザーのSmart Goalを<br>
-                            絞り込み検索！<br>
+                            🔍Searchで他のユーザーの<br>
+                            Smart Goalを絞り込み検索！<br>
                             ✔ボタンで参考にしたいユーザーの<br>
                             Smart GoalをKeep!
                         </p>
@@ -86,11 +85,11 @@
             </section>
             <section  id="keep">
                  <div class="skill-box">  
-                    <div class="skill-title">KEEP List</div>
+                    <div class="skill-title">KEEP</div>
                         <p class="skill-text">
                             KeepしたSmart Goalを<br>
                             Keepsページでチェックできる!<br>
-                            SmartGoal作成の時にコピーして使えます。
+                            SmartGoal作成の時にコピーして使える!
                         </p>
                     </div>
                 <div class="skill-box">
