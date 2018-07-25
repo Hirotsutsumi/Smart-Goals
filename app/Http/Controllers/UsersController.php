@@ -145,6 +145,7 @@ class UsersController extends Controller
         return redirect('/');
     }
 
+
     public function howto()
     {
         $user = \Auth::user();
