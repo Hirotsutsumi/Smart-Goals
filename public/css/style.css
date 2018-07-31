@@ -480,6 +480,7 @@ color: white;
 font-weight: lighter;
 box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
 font-family: 'Constantia',sans-serif;
+margin-top: 0;
 }
 
 .image-box .disabled_checkbox {

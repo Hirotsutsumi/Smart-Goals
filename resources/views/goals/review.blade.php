@@ -13,7 +13,7 @@
                             <h2 class="panel-title" style=>Today's Goals</h2>
                         </div>
                         <div class="panel-body">
-                            {!! Form::open(['route' => 'goals.reviewed']) !!}
+                            {!! Form::open(['route' => 'goals.reviewed', 'target' => '_blank']) !!}
                                 <?php foreach($goals as $goal): ?>
                                     <u><p class="text-left" style="font-size:large">Goal: {{ $goal->content }}</p></u>
                                     <div class="form-group row">
