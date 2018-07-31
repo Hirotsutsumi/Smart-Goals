@@ -127,7 +127,8 @@ class UsersController extends Controller
             'data1' => $data1,
             'data2' => $data2,
             'data3' => $data3,
-            'keepdata' => $keepdata
+            'keepdata' => $keepdata,
+            'user' => $user,
             ]);
         
     }
